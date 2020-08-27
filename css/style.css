@@ -107,7 +107,7 @@ header {
 /*fukidashi*/
 
 .fuki-wrap {
-  width: 8.5vw;
+  width: 130px;
   position: absolute;
   z-index: 5;
 }
@@ -131,54 +131,11 @@ header {
   /* animation: fuki-animation 8s infinite; */
   /* animation: fuki2-animation 1s; */
 }
-
-@keyframes fuki-first-animation {
-  0% {
-    transform: scale(0);
-  }
-  50% {
-    transform: scale(0);
-  }
-  70% {
-    transform: scale(1.1);
-  }
-  80% {
-    transform: scale(1);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
-
-@keyframes fuki-animation {
-  0% {
-    transform: scale(1);
-  }
-  70% {
-    transform: scale(1);
-  }
-  73% {
-    transform: scale(0.95);
-  }
-  75% {
-    transform: scale(1.1);
-  }
-  82% {
-    transform: scale(1.05);
-  }
-  95% {
-    transform: scale(1.05);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
-
 .fuki-contents {
   position: absolute;
   top: 45%;
-  left: 2.5vw;
-  width: 3vw;
+  left: 30%;
+  width: 40%;
 }
 
 .maru1 {
@@ -194,7 +151,7 @@ header {
 }
 .maru2 {
   position: absolute;
-  left: 1.5vw;
+  left: 22px;
   top: 0;
   width: 10px;
   height: 10px;
@@ -205,7 +162,7 @@ header {
 }
 .maru3 {
   position: absolute;
-  left: 3vw;
+  left: 44px;
   top: 0;
   width: 10px;
   height: 10px;
@@ -217,7 +174,7 @@ header {
 
 @keyframes maru1-animation {
   0% {
-    left: 1.5vw;
+    left: 22px;
     opacity: 1;
   }
   5%,
@@ -240,7 +197,7 @@ header {
     left: 0;
   }
   70% {
-    left: 1.5vw;
+    left: 22px;
     height: 10px;
     top: 0;
     border-radius: 100%;
@@ -256,7 +213,7 @@ header {
     border-radius: 5px;
   }
   100% {
-    left: 1.5vw;
+    left: 22px;
     height: 10px;
     top: 0;
     border-radius: 100%;
@@ -297,10 +254,10 @@ header {
 
 @keyframes maru3-animation {
   0% {
-    left: 1.5vw;
+    left: 22px;
   }
   5% {
-    left: 3vw;
+    left: 44px;
   }
   10%,
   20%,
@@ -319,10 +276,10 @@ header {
   }
   65% {
     opacity: 1;
-    left: 3vw;
+    left: 44px;
   }
   70% {
-    left: 1.5vw;
+    left: 22px;
     top: 0;
   }
   75% {
@@ -332,7 +289,7 @@ header {
     top: 20px;
   }
   100% {
-    left: 1.5vw;
+    left: 22px;
     top: 0;
   }
 }
@@ -523,14 +480,24 @@ section {
   margin-bottom: 60px;
 }
 
+.work-img-wrap {
+  width: 100%;
+}
+
+.work-img-wrap img {
+  width: 100%;
+}
+
 .work-title {
   display: flex;
   align-items: baseline;
+  margin: 7px 0;
 }
 
 .work-title h4 {
   font-size: 20px;
   margin-right: 7px;
+  font-weight: 500;
 }
 
 .work-title p {
@@ -540,6 +507,7 @@ section {
 
 .work-name {
   color: #878787;
+  font-size: 13px;
 }
 
 /* member */
@@ -766,10 +734,90 @@ footer {
   top: -150px;
 }
 
+/*animation*/
+
 .fuki-anim1 {
   animation: fuki-first-animation 1s;
 }
 
 .fuki-anim {
   animation: fuki-animation 8s infinite;
+}
+
+@keyframes fuki-first-animation {
+  0% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(0);
+  }
+  70% {
+    transform: scale(1.1);
+  }
+  80% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes fuki-animation {
+  0% {
+    transform: scale(1);
+  }
+  70% {
+    transform: scale(1);
+  }
+  73% {
+    transform: scale(0.95);
+  }
+  75% {
+    transform: scale(1.1);
+  }
+  82% {
+    transform: scale(1.05);
+  }
+  95% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.main-visual h1 .char {
+  animation-name: jump;
+  animation-delay: calc(var(--char-index) * 0.075s);
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  display: inline-block;
+}
+
+@keyframes jump {
+  0% {
+    transform: translateY(2%) scaleY(0.9);
+  }
+  3% {
+    transform: translateY(-80%) scaleY(1.2);
+  }
+  6% {
+    transform: translateY(10%) scaleY(0.8);
+  }
+  12% {
+    transform: translateY(-5%) scaleY(1);
+  }
+  15%,
+  100% {
+    transform: translateY(0) scaleY(1);
+  }
+}
+
+.sec-hd-anim {
+  animation-name: jump;
+  animation-delay: calc(var(--char-index) * 0.075s);
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  display: inline-block;
 }

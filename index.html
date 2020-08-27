@@ -99,7 +99,7 @@
     </header>
     <div id="cover"></div>
     <div class="main-visual" id="top">
-      <h1>
+      <h1 data-splitting>
         コーディングを<br />
         もっと楽しく
       </h1>
@@ -133,7 +133,7 @@
 
     <a name="jump-what"></a>
     <section class="what" id="what">
-      <h2 class="section-heading">what's co:De</h2>
+      <h2 class="section-heading" data-splitting>what's co:De</h2>
       <div class="what-fukidashi-wrap">
         <img
           src="images/sub-fuki.svg"
@@ -165,7 +165,7 @@
 
     <a name="jump-podcast"></a>
     <section class="podcast" id="podcast">
-      <h2 class="section-heading">podcast</h2>
+      <h2 class="section-heading" data-splitting>podcast</h2>
       <p class="section-caption">
         co:De卓長・ドムジャが、co:Deのコンセプトや作品についてトークしています。<br
           class="only-pc"
@@ -184,7 +184,7 @@
 
     <a name="jump-works"></a>
     <section class="works" id="works">
-      <h2 class="section-heading">works</h2>
+      <h2 class="section-heading" data-splitting>works</h2>
       <div class="sum">
         <h3>16</h3>
         <p>contents</p>
@@ -201,20 +201,20 @@
                 <p>/</p>
                 <p>webサイト</p>
               </div>
-              <p class="work-name">4M ソニョ</p>
+              <p class="work-name">4N はまちゃん</p>
             </li>
           </a>
           <a class="go_work" target="work_2">
             <li>
               <div class="work-img-wrap">
-                <img src="images/work-syachipa.svg" alt="作品の写真" />
+                <img src="images/work-photo/chikakiyo1.jpg" alt="作品の写真" />
               </div>
               <div class="work-title">
-                <h4>タイトル</h4>
+                <h4>ポートフォリオサイト</h4>
                 <p>/</p>
                 <p>webサイト</p>
               </div>
-              <p class="work-name">4M ソニョ</p>
+              <p class="work-name">4N よねちゃん</p>
             </li>
           </a>
         </div>
@@ -222,14 +222,14 @@
           <a class="go_work" target="work_3">
             <li>
               <div class="work-img-wrap">
-                <img src="images/work-syachipa.svg" alt="作品の写真" />
+                <img src="images/work-photo/chikakiyo1.jpg" alt="作品の写真" />
               </div>
               <div class="work-title">
-                <h4>タイトル</h4>
+                <h4>ポートフォリオサイト</h4>
                 <p>/</p>
                 <p>webサイト</p>
               </div>
-              <p class="work-name">4M ソニョ</p>
+              <p class="work-name">3M いとしのエリー</p>
             </li>
           </a>
           <a class="go_work" target="work_4">
@@ -240,9 +240,9 @@
               <div class="work-title">
                 <h4>タイトル</h4>
                 <p>/</p>
-                <p>webサイト</p>
+                <p>webアプリ</p>
               </div>
-              <p class="work-name">4M ソニョ</p>
+              <p class="work-name">3M 不協卍和音</p>
             </li>
           </a>
         </div>
@@ -251,7 +251,7 @@
 
     <a name="jump-member"></a>
     <section class="member" id="member">
-      <h2 class="section-heading">member</h2>
+      <h2 class="section-heading" data-splitting>member</h2>
       <div class="sum">
         <h3>20</h3>
         <p>people</p>
@@ -390,7 +390,7 @@
 
     <a name="jump-comments"></a>
     <section class="comments" id="comments">
-      <h2 class="section-heading">comments</h2>
+      <h2 class="section-heading" data-splitting>comments</h2>
       <p class="section-caption">
         ご意見・ご感想等ありましたら、下記入力フォームよりお聞かせください。
       </p>
@@ -433,9 +433,11 @@
     </section>
 
     <footer>
-      <div class="footer-logo-wrap">
-        <img src="images/logo.svg" alt="footerのロゴ" />
-      </div>
+      <a class="#top">
+        <div class="footer-logo-wrap">
+          <img src="images/logo.svg" alt="footerのロゴ" />
+        </div>
+      </a>
       <ul class="footer-nav-list">
         <li>
           <a href="#what">what's co:De</a>
@@ -460,6 +462,7 @@
         </a>
       </div>
     </footer>
+    <script src="js/splitting.js"></script>
     <script src="js/index_script.js"></script>
     <script src="js/script.js"></script>
   </body>

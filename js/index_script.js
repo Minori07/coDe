@@ -1,3 +1,4 @@
+Splitting();
 $(function () {
   setTimeout(fukiIn1, 500);
   setTimeout(fukiIn2, 800);
@@ -41,17 +42,41 @@ $(".go_taku").click(function () {
   setTimeout(linkUrl, 1000);
 });
 
+//位置取得
+var what = document.getElementById("what").getBoundingClientRect().top;
+var podcast = document.getElementById("podcast").getBoundingClientRect().top;
+var works = document.getElementById("works").getBoundingClientRect().top;
+var member = document.getElementById("member").getBoundingClientRect().top;
+var comments = document.getElementById("comments").getBoundingClientRect().top;
 $(window).scroll(function () {
   $("body").each(function () {
     var elemPos = $(this).offset().top,
       scroll = $(window).scrollTop(),
       windowHeight = $(window).height();
     // console.log(scroll);
-    if (scroll >= 750) {
+    if (scroll >= what - 400) {
+      const delayTime = 200;
+      $(".what h2 .char").addClass("sec-hd-anim");
       $(".what-fukidashi-wrap img").each(function (i) {
-        $(this).addClass("fuki-anim");
-        setInterval(slide, 2000);
+        $(this)
+          .delay(i * delayTime)
+          .queue(function () {
+            $(this).addClass("fuki-anim1").dequeue();
+            $(this).css({ transform: "scale(1)" }).dequeue();
+          });
       });
+    }
+    if (scroll >= podcast - 400) {
+      $(".podcast h2 .char").addClass("sec-hd-anim");
+    }
+    if (scroll >= works - 400) {
+      $(".works h2 .char").addClass("sec-hd-anim");
+    }
+    if (scroll >= member - 400) {
+      $(".member h2 .char").addClass("sec-hd-anim");
+    }
+    if (scroll >= comments - 400) {
+      $(".comments h2 .char").addClass("sec-hd-anim");
     }
   });
 });
