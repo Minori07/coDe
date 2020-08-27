@@ -90,7 +90,7 @@ header {
 
 .main-visual h1 {
   position: absolute;
-  top: 270px;
+  top: 30vh;
   left: 300px;
   font-size: 38px;
   font-weight: 600;
@@ -119,17 +119,20 @@ header {
 .main-fuki1 {
   top: 20vh;
   left: 54vw;
-  animation: fuki1-animation 8s infinite;
+  transform: scale(0);
+  /* animation: fuki-animation 8s infinite; */
   /* animation: fuki1-first-animation 1s; */
 }
 
 .main-fuki2 {
   top: 12vh;
   left: 69vw;
-  animation: fuki2-animation 1s;
+  transform: scale(0);
+  /* animation: fuki-animation 8s infinite; */
+  /* animation: fuki2-animation 1s; */
 }
 
-@keyframes fuki1-first-animation {
+@keyframes fuki-first-animation {
   0% {
     transform: scale(0);
   }
@@ -147,7 +150,7 @@ header {
   }
 }
 
-@keyframes fuki1-animation {
+@keyframes fuki-animation {
   0% {
     transform: scale(1);
   }
@@ -171,24 +174,6 @@ header {
   }
 }
 
-@keyframes fuki2-animation {
-  0% {
-    transform: scale(0);
-  }
-  60% {
-    transform: scale(0);
-  }
-  80% {
-    transform: scale(1.1);
-  }
-  90% {
-    transform: scale(1);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
-
 .fuki-contents {
   position: absolute;
   top: 45%;
@@ -205,6 +190,7 @@ header {
   background-color: white;
   border-radius: 100%;
   animation: maru1-animation 8s infinite;
+  animation-delay: 1.5s;
 }
 .maru2 {
   position: absolute;
@@ -215,6 +201,7 @@ header {
   background-color: white;
   border-radius: 100%;
   animation: maru2-animation 8s infinite;
+  animation-delay: 1.5s;
 }
 .maru3 {
   position: absolute;
@@ -225,6 +212,7 @@ header {
   background-color: white;
   border-radius: 100%;
   animation: maru3-animation 8s infinite;
+  animation-delay: 1.5s;
 }
 
 @keyframes maru1-animation {
@@ -234,7 +222,8 @@ header {
   }
   5%,
   20%,
-  35% {
+  35%,
+  50% {
     left: 0;
     opacity: 0.5;
   }
@@ -242,7 +231,9 @@ header {
   15%,
   25%,
   30%,
-  40% {
+  40%,
+  45%,
+  55% {
     opacity: 1;
   }
   65% {
@@ -279,12 +270,15 @@ header {
   15%,
   30%,
   35%,
-  45% {
+  45%,
+  50%,
+  60% {
     opacity: 1;
   }
   10%,
   25%,
-  40% {
+  40%,
+  55% {
     opacity: 0.5;
   }
   70% {
@@ -313,15 +307,18 @@ header {
   25%,
   35%,
   40%,
-  50% {
+  50%,
+  55% {
     opacity: 1;
   }
   15%,
   30%,
-  45% {
+  45%,
+  60% {
     opacity: 0.5;
   }
   65% {
+    opacity: 1;
     left: 3vw;
   }
   70% {
@@ -357,7 +354,7 @@ header {
   transform: rotate(90deg);
   font-size: 10px;
   letter-spacing: 0.05em;
-  font-family: "comodo";
+  font-family: "Avenir Next", sans-serif;
 }
 
 .scroll-lines {
@@ -451,13 +448,37 @@ section {
 /*what*/
 
 .what-fukidashi-wrap {
+  position: relative;
   margin-left: 10vw;
-  width: 80px;
+  height: 80px;
 }
 
 .what-fukidashi-wrap img {
-  width: 100%;
+  width: 60px;
+  position: absolute;
+  transform: scale(0);
 }
+
+.sub-fuki1 {
+  top: 30px;
+  left: 15px;
+}
+
+.sub-fuki2 {
+  top: 4px;
+  left: 0;
+}
+
+.sub-fuki3 {
+  top: 20px;
+  left: 45px;
+}
+
+.sub-fuki4 {
+  top: -10px;
+  left: 35px;
+}
+
 .what-green {
   color: var(--green);
   font-size: 18px;
@@ -737,10 +758,18 @@ footer {
   top: 0;
   left: 0;
   z-index: 999;
-  transition: all 0.5s;
+  transition: all 0.8s;
 }
 
 .jump-url {
   position: relative;
   top: -150px;
+}
+
+.fuki-anim1 {
+  animation: fuki-first-animation 1s;
+}
+
+.fuki-anim {
+  animation: fuki-animation 8s infinite;
 }

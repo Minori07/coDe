@@ -46,7 +46,11 @@ $(function () {
  */
 function search_filter(group) {
   // 非表示状態を解除
-  $(listItem).css({ display: "flex" });
+  if (screen.width > 480) {
+    $(listItem).css({ display: "flex" });
+  } else {
+    $(listItem).css({ display: "block" });
+  }
   // 値が空の場合はすべて表示
   if (group === "") {
     return;
