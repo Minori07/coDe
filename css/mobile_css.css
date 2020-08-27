@@ -1,0 +1,422 @@
+/* @font-face {
+  font-family: "hiranogi";
+  src: url("../font/ヒラギノ角ゴシック W3.ttc");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "avenir";
+  src: url("../font/Avenir Next.ttc");
+  font-weight: 100;
+} */
+
+:root {
+  --green: #82cbca;
+  --black: #141414;
+  --gray: #f7f7f7;
+}
+
+.only-pc {
+  display: none;
+}
+
+/*header*/
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;
+  height: 100px;
+  padding: 0 7%;
+  left: 0;
+}
+
+.header-logo-wrap {
+  height: 60%;
+  margin: 0;
+}
+
+.header-logo-wrap img {
+  height: 100%;
+  width: auto;
+}
+
+.header-nav-list {
+  display: none;
+}
+
+/* ハンバーガーメニュー */
+.header-sp-icon-wrap {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  padding: 10px 0;
+  z-index: 100;
+  border: solid 1px var(--green);
+  border-radius: 20px;
+  background-color: white;
+}
+
+.header-sp-icon-bar1,
+.header-sp-icon-bar3 {
+  position: relative;
+  width: 40%;
+  height: 2px;
+  background-color: var(--green);
+  border-radius: 1px;
+  transform-origin: center;
+  transition: all 0.3s ease-out;
+}
+
+.is-open .header-sp-icon-bar1 {
+  transform: translateY(4.5px) rotateZ(45deg);
+}
+.is-open .header-sp-icon-bar3 {
+  transform: translateY(-4.5px) rotateZ(-45deg);
+}
+
+.header-sp-nav {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background-color: white;
+  display: none;
+}
+
+.header-sp-nav-list {
+  width: 60%;
+  margin: auto;
+  list-style: none;
+}
+
+.header-sp-nav-img-wrap {
+  width: 100px;
+  margin: 13vh auto 8vh;
+}
+
+.header-sp-nav-img-wrap img {
+  width: 100%;
+}
+
+.header-sp-nav-list li {
+  margin-bottom: 7vh;
+  text-align: center;
+}
+
+.header-sp-nav-list a {
+  font-family: "Avenir Next", sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  font-size: 20px;
+  color: var(--black);
+}
+
+.header-sp-nav-list img {
+  width: 7px;
+}
+
+.go-taku-top a {
+  font-family: "ヒラギノ角ゴシック", "Hiragino Sans", sans-serif;
+  font-size: 13px;
+  letter-spacing: 0.05em;
+  color: #878787;
+}
+
+.go-taku-top img {
+  margin-right: 5px;
+}
+
+/*main-visual*/
+
+.main-visual {
+  margin-top: 100px;
+  height: calc(100vh - 100px);
+}
+
+.main-visual h1 {
+  position: static;
+  font-size: 28px;
+  margin-left: 30px;
+}
+
+.fuki-wrap {
+  width: 30vw;
+}
+
+.main-fuki1 {
+  top: 13vh;
+  left: 20vw;
+}
+
+.main-fuki2 {
+  top: 8vh;
+  left: 62vw;
+}
+
+.main-visual-img-wrap {
+  width: 100%;
+  height: calc(100vh - 184px);
+}
+
+.main-visual-img-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 0 10%;
+}
+
+.main-visual-scroll {
+  bottom: 10vh;
+  right: 0;
+}
+
+/*section-contents*/
+
+section {
+  padding: 0 10%;
+  margin-top: 80px;
+  margin-bottom: 0;
+}
+
+.section-heading {
+  font-size: 28px;
+  margin-bottom: 10px;
+  text-shadow: 0.5px -0.5px white, 1px -1px white, 1.5px -1.5px white,
+    2px -2px white, 2.5px -2.5px white, 1px -1px 8px var(--green);
+}
+
+.section-caption {
+  margin: 30px 0 10px;
+  width: 100%;
+  font-size: 11px;
+  line-height: 20px;
+}
+
+.sum h3 {
+  font-size: 40px;
+  line-height: 40px;
+}
+
+.sum p {
+  font-size: 10px;
+  letter-spacing: 0.15em;
+  margin-bottom: 40px;
+}
+
+/*what*/
+
+.what .section-caption {
+  margin-top: 0;
+}
+
+.what-fukidashi-wrap {
+  margin-left: 100px;
+  width: 50px;
+}
+
+.what-green {
+  font-size: 14px;
+}
+
+/*podcast*/
+
+.podcast-back-wrap {
+  top: 60px;
+  left: 0;
+  width: 100vw;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.podcast-back-wrap img {
+  width: 115%;
+  object-position: -30px 0;
+}
+
+.podcast iframe {
+  width: 100%;
+  height: 100px;
+  margin-top: 20px;
+}
+
+/* works */
+
+.work-list {
+  display: block;
+}
+
+.work-list-half {
+  width: 100%;
+}
+
+.list-right {
+  position: static;
+}
+
+.work-list li {
+  margin-bottom: 60px;
+}
+
+.work-title h4 {
+  font-size: 20px;
+  margin-right: 7px;
+}
+
+.work-title p {
+  margin-left: 13px;
+  font-size: 11px;
+}
+
+.work-name {
+  font-size: 11px;
+}
+
+/* member */
+.member-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.member-list li {
+  width: 45%;
+  margin-right: 0;
+  margin-bottom: 40px;
+}
+
+/* comment */
+.comments {
+  padding-top: 40px;
+  padding-bottom: 70px;
+}
+
+.form-input-wrap h3 {
+  font-size: 12px;
+}
+
+.form-input-wrap input {
+  width: 100%;
+  height: 30px;
+}
+
+.form-input-wrap textarea {
+  width: 100%;
+  height: 100px;
+}
+
+.form-submit {
+  margin-left: 22%;
+}
+
+/* footer */
+footer a {
+  color: var(--green);
+}
+
+footer {
+  display: block;
+  padding: 40px 10%;
+}
+
+.footer-logo-wrap {
+  width: 80px;
+}
+
+.footer-logo-wrap img {
+  width: 100%;
+}
+
+.footer-nav-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 20px 0;
+}
+
+.footer-nav-list li {
+  font-family: "Avenir Next", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: 0.15em;
+  line-height: 30px;
+  margin-right: 25px;
+}
+
+.footer-go-taku-top img {
+  width: 5px;
+  margin-right: 5px;
+}
+
+.footer-go-taku-top a {
+  font-size: 10px;
+  letter-spacing: 0.05em;
+}
+
+/*works.html*/
+
+.works-contents {
+  margin: 100px 10%;
+}
+
+.summary-list li {
+  display: block;
+  padding-bottom: 50px;
+  border-bottom: solid 1px var(--green);
+}
+
+.work-type {
+  top: 100px;
+  left: 15%;
+}
+
+.work-type p {
+  margin-right: 10px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.bx-wrapper {
+  width: auto;
+  height: 170px;
+  margin: 20px 0;
+}
+
+.caption {
+  display: block;
+  height: auto;
+  width: 100%;
+  margin-top: 50px;
+}
+
+.creator-img-wrap {
+  width: 40px;
+  height: 40px;
+  margin-right: 20px;
+}
+
+.summary-list p {
+  font-size: 11px;
+  margin-top: 20px;
+}
+
+.work-toc {
+  padding: 20px;
+  border-radius: 10px;
+  width: 100%;
+  margin: 30px 0;
+  font-size: 11px;
+  letter-spacing: 0.08em;
+}
+
+.toc-green {
+  width: 80px;
+}
+
+.go-work {
+  width: 210px;
+  height: 50px;
+}

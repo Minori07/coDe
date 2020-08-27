@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- 文字コード設定 -->
+    <meta charset="UTF-8" />
+    <!-- いろんなデバイス幅で表示崩れが起きないようにするやつ -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- ページタイトル -->
+    <title>co:De</title>
+    <!-- ページ情報 -->
+    <meta name="description" content="co:De卓作品展示サイト" />
+    <!-- 検索で引っかかるようにする -->
+    <meta
+      name="keywords"
+      content="co:De,卓,卓展,卓展2020,webサイト,webアプリケーション,学生作品"
+    />
+    <!-- css読み込み -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      media="(max-width: 480px)"
+      href="./css/mobile_css.css"
+    />
+    <!-- jquery読み込み(必要な人のみ) -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.min.js"
+      integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <div class="header-logo-wrap">
+        <a href="#top">
+          <img src="images/logo.svg" alt="headerのロゴ" />
+        </a>
+      </div>
+      <ul class="header-nav-list">
+        <li>
+          <a href="#what">what's co:De</a>
+        </li>
+        <li>
+          <a href="#podcast">podcast</a>
+        </li>
+        <li>
+          <a href="#works">works</a>
+        </li>
+        <li>
+          <a href="#member">member</a>
+        </li>
+        <li>
+          <a href="#comments">comments</a>
+        </li>
+        <li class="go-taku-top">
+          <a class="go_taku">
+            <img src="images/gray_left.svg" alt="" />
+            卓展サイトTOPへ
+          </a>
+        </li>
+      </ul>
+
+      <!-- ハンバーガーメニュー -->
+      <div class="header-sp-icon-wrap">
+        <div class="header-sp-icon-bar1"></div>
+        <div class="header-sp-icon-bar3"></div>
+      </div>
+
+      <!-- スマホnav -->
+      <div class="header-sp-nav">
+        <div class="header-sp-nav-img-wrap">
+          <a href="#top">
+            <img src="images/logo.svg" alt="ロゴイメージ" />
+          </a>
+        </div>
+        <ul class="header-sp-nav-list">
+          <li>
+            <a href="#what">what's co:De</a>
+          </li>
+          <li>
+            <a href="#podcast">podcast</a>
+          </li>
+          <li>
+            <a href="#works">works</a>
+          </li>
+          <li>
+            <a href="#member">member</a>
+          </li>
+          <li>
+            <a href="#comments">comments</a>
+          </li>
+          <li class="go-taku-top">
+            <a class="go_taku">
+              <img src="images/gray_left.svg" alt="" />
+              卓展サイトTOPへ
+            </a>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <div id="cover"></div>
+    <div class="main-visual" id="top">
+      <h1>
+        コーディングを<br />
+        もっと楽しく
+      </h1>
+      <div class="main-fuki1 fuki-wrap">
+        <img src="images/main-fuki.svg" alt="メインビジュアル吹き出し" />
+        <div class="fuki-contents">
+          <div class="maru1"></div>
+          <div class="maru2"></div>
+          <div class="maru3"></div>
+        </div>
+      </div>
+      <div class="main-fuki2 fuki-wrap">
+        <img src="images/main-fuki.svg" alt="メインビジュアル吹き出し" />
+        <div class="fuki-contents">
+          <div class="maru1"></div>
+          <div class="maru2"></div>
+          <div class="maru3"></div>
+        </div>
+      </div>
+      <div class="main-visual-img-wrap" id="main-img">
+        <img src="images/main-visual.svg" alt="メインビジュアル" />
+      </div>
+      <div class="main-visual-scroll">
+        <p>Scroll</p>
+        <div class="scroll-lines">
+          <div class="scroll-line"></div>
+          <div class="scroll-line-cover"></div>
+        </div>
+      </div>
+    </div>
+
+    <a name="jump-what"></a>
+    <section class="what" id="what">
+      <h2 class="section-heading">what's co:De</h2>
+      <div class="what-fukidashi-wrap">
+        <img src="images/fukidashi.svg" alt="吹き出しのイメージ" />
+      </div>
+      <p class="section-caption">
+        co:Deは 「 <span class="what-green">楽しくコードを書く</span> 」
+        をコンセプトとし、WebサイトやWebアプリを制作する卓です。
+        企画、デザイン、コーディングのweb制作に置ける一連の流れを学びながら、作品の完成を目指します。
+      </p>
+    </section>
+
+    <a name="jump-podcast"></a>
+    <section class="podcast" id="podcast">
+      <h2 class="section-heading">podcast</h2>
+      <p class="section-caption">
+        co:De卓長・ドムジャが、co:Deのコンセプトや作品についてトークしています。<br
+          class="only-pc"
+        />
+        作品を見ながら、是非お聴きください！
+      </p>
+      <div class="podcast-back-wrap">
+        <img src="images/podcast-back.svg" alt="podcast背景" />
+      </div>
+      <iframe
+        src="https://anchor.fm/wired-japan/embed/episodes/VOL-37BRAVE-NEW-WORLD-005-egdnjm/a-a2l2u1o"
+        frameborder="0"
+        scrolling="no"
+      ></iframe>
+    </section>
+
+    <a name="jump-works"></a>
+    <section class="works" id="works">
+      <h2 class="section-heading">works</h2>
+      <div class="sum">
+        <h3>16</h3>
+        <p>contents</p>
+      </div>
+      <ul class="work-list">
+        <div class="work-list-half">
+          <a class="go_work" target="work_1">
+            <li>
+              <div class="work-img-wrap">
+                <img src="images/work-syachipa.svg" alt="作品の写真" />
+              </div>
+              <div class="work-title">
+                <h4>タイトル</h4>
+                <p>/</p>
+                <p>webサイト</p>
+              </div>
+              <p class="work-name">4M ソニョ</p>
+            </li>
+          </a>
+          <a class="go_work" target="work_2">
+            <li>
+              <div class="work-img-wrap">
+                <img src="images/work-syachipa.svg" alt="作品の写真" />
+              </div>
+              <div class="work-title">
+                <h4>タイトル</h4>
+                <p>/</p>
+                <p>webサイト</p>
+              </div>
+              <p class="work-name">4M ソニョ</p>
+            </li>
+          </a>
+        </div>
+        <div class="work-list-half list-right">
+          <a class="go_work" target="work_3">
+            <li>
+              <div class="work-img-wrap">
+                <img src="images/work-syachipa.svg" alt="作品の写真" />
+              </div>
+              <div class="work-title">
+                <h4>タイトル</h4>
+                <p>/</p>
+                <p>webサイト</p>
+              </div>
+              <p class="work-name">4M ソニョ</p>
+            </li>
+          </a>
+          <a class="go_work" target="work_4">
+            <li>
+              <div class="work-img-wrap">
+                <img src="images/work-syachipa.svg" alt="作品の写真" />
+              </div>
+              <div class="work-title">
+                <h4>タイトル</h4>
+                <p>/</p>
+                <p>webサイト</p>
+              </div>
+              <p class="work-name">4M ソニョ</p>
+            </li>
+          </a>
+        </div>
+      </ul>
+    </section>
+
+    <a name="jump-member"></a>
+    <section class="member" id="member">
+      <h2 class="section-heading">member</h2>
+      <div class="sum">
+        <h3>20</h3>
+        <p>people</p>
+      </div>
+      <ul class="member-list">
+        <div class="member-row">
+          <li>
+            <div class="member-img-wrap">
+              <img src="images/member-photo.svg" alt="メンバーの画像" />
+            </div>
+            <p class="member-role">leader</p>
+            <p class="member-name">4M ドムジャ</p>
+          </li>
+          <li>
+            <div class="member-img-wrap">
+              <img src="images/member-photo.svg" alt="メンバーの画像" />
+            </div>
+            <p class="member-role">sub leader</p>
+            <p class="member-name">4M ソニョ</p>
+          </li>
+          <li>
+            <div class="member-img-wrap">
+              <img src="images/member-photo.svg" alt="メンバーの画像" />
+            </div>
+            <p class="member-role">support</p>
+            <p class="member-name">4M 頬骨</p>
+          </li>
+          <li>
+            <div class="member-img-wrap">
+              <img src="images/member-photo.svg" alt="メンバーの画像" />
+            </div>
+            <p class="member-role">support</p>
+            <p class="member-name">4M かまぼこ</p>
+          </li>
+        </div>
+        <div class="member-row">
+          <li>
+            <div class="member-img-wrap">
+              <img src="images/member-photo.svg" alt="メンバーの画像" />
+            </div>
+            <p class="member-name">4N はまちゃん</p>
+          </li>
+          <li>
+            <div class="member-img-wrap">
+              <img src="images/member-photo.svg" alt="メンバーの画像" />
+            </div>
+            <p class="member-name">4N よねちゃん</p>
+          </li>
+          <li>
+            <div class="member-img-wrap">
+              <img src="images/member-photo.svg" alt="メンバーの画像" />
+            </div>
+            <p class="member-name">3M いとしのエリー</p>
+          </li>
+          <li>
+            <div class="member-img-wrap">
+              <img src="images/member-photo.svg" alt="メンバーの画像" />
+            </div>
+            <p class="member-name">3M 不協卍和音</p>
+          </li>
+          <li>
+            <div class="member-img-wrap">
+              <img src="images/member-photo.svg" alt="メンバーの画像" />
+            </div>
+            <p class="member-name">3M 頭皮にやさしく</p>
+          </li>
+          <li>
+            <div class="member-img-wrap">
+              <img src="images/member-photo.svg" alt="メンバーの画像" />
+            </div>
+            <p class="member-name">2M しゃちほこ</p>
+          </li>
+          <li>
+            <div class="member-img-wrap">
+              <img src="images/member-photo.svg" alt="メンバーの画像" />
+            </div>
+            <p class="member-name">2M www.NITORI.co.jp</p>
+          </li>
+          <li>
+            <div class="member-img-wrap">
+              <img src="images/member-photo.svg" alt="メンバーの画像" />
+            </div>
+            <p class="member-name">2M ラムこ</p>
+          </li>
+          <li>
+            <div class="member-img-wrap">
+              <img src="images/member-photo.svg" alt="メンバーの画像" />
+            </div>
+            <p class="member-name">2M パッチム</p>
+          </li>
+          <li>
+            <div class="member-img-wrap">
+              <img src="images/member-photo.svg" alt="メンバーの画像" />
+            </div>
+            <p class="member-name">2M 半月板</p>
+          </li>
+          <li>
+            <div class="member-img-wrap">
+              <img src="images/member-photo.svg" alt="メンバーの画像" />
+            </div>
+            <p class="member-name">2M ローソン</p>
+          </li>
+          <li>
+            <div class="member-img-wrap">
+              <img src="images/member-photo.svg" alt="メンバーの画像" />
+            </div>
+            <p class="member-name">1M いそのだっぺよ</p>
+          </li>
+          <li>
+            <div class="member-img-wrap">
+              <img src="images/member-photo.svg" alt="メンバーの画像" />
+            </div>
+            <p class="member-name">1M かなりミモザ</p>
+          </li>
+          <li>
+            <div class="member-img-wrap">
+              <img src="images/member-photo.svg" alt="メンバーの画像" />
+            </div>
+            <p class="member-name">1M 森殺</p>
+          </li>
+          <li>
+            <div class="member-img-wrap">
+              <img src="images/member-photo.svg" alt="メンバーの画像" />
+            </div>
+            <p class="member-name">1M ネッコアラ</p>
+          </li>
+          <li>
+            <div class="member-img-wrap">
+              <img src="images/member-photo.svg" alt="メンバーの画像" />
+            </div>
+            <p class="member-name">1M Edenの林檎</p>
+          </li>
+        </div>
+      </ul>
+    </section>
+
+    <a name="jump-comments"></a>
+    <section class="comments" id="comments">
+      <h2 class="section-heading">comments</h2>
+      <p class="section-caption">
+        ご意見・ご感想等ありましたら、下記入力フォームよりお聞かせください。
+      </p>
+
+      <form action="https://api.staticforms.xyz/submit" method="post">
+        <div class="form-input-wrap">
+          <h3>職業</h3>
+          <input type="text" name="name" />
+        </div>
+        <div class="form-input-wrap">
+          <h3>ご意見・ご感想</h3>
+          <textarea name="message"></textarea>
+          <input type="text" name="honeypot" style="display: none;" />
+        </div>
+        <!-- アクセスキー -->
+        <input
+          type="hidden"
+          name="accessKey"
+          value="ee3f4d1d-11eb-4169-a38a-fc1829a07bd7"
+        />
+        <!-- 件名 -->
+        <input type="hidden" name="subject" value="卓展感想" />
+        <!-- リダイレクト先 -->
+        <input
+          type="hidden"
+          name="redirectTo"
+          value="https://geikou-takuten.com/"
+        />
+        <!-- <input
+          type="hidden"
+          name="redirectTo"
+          value="https://geikou-takuten.com/code/"
+        /> -->
+        <!-- <input type="submit" value="送信する" class="form-submit" /> -->
+        <button type="submit" class="form-submit">
+          送信する
+          <img src="images/white-right.svg" />
+        </button>
+      </form>
+    </section>
+
+    <footer>
+      <div class="footer-logo-wrap">
+        <img src="images/logo.svg" alt="footerのロゴ" />
+      </div>
+      <ul class="footer-nav-list">
+        <li>
+          <a href="#what">what's co:De</a>
+        </li>
+        <li>
+          <a href="#podcast">podcast</a>
+        </li>
+        <li>
+          <a href="#works">works</a>
+        </li>
+        <li>
+          <a href="#member">member</a>
+        </li>
+        <li>
+          <a href="#comments">comments</a>
+        </li>
+      </ul>
+      <div class="footer-go-taku-top">
+        <a class="go_taku">
+          <img src="images/green-left.svg" alt="" />
+          卓展サイトTOPへ
+        </a>
+      </div>
+    </footer>
+    <script src="js/index_script.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
