@@ -139,11 +139,62 @@ header {
   position: absolute;
   left: 50%;
   bottom: 0;
-  height: 70%;
+  height: 65%;
   animation: hito-fadein 3s;
 }
 
 .main-hito-wrap img {
+  height: 100%;
+}
+
+.girl-head-wrap {
+  position: absolute;
+  top: 1.5%;
+  left: 7%;
+  height: 15%;
+  transform-origin: bottom;
+  animation: girl-head-anim 3s infinite linear alternate;
+}
+
+@keyframes girl-head-anim {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(20deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.boy-head-wrap {
+  position: absolute;
+  top: -11%;
+  left: 37.5%;
+  height: 15%;
+  transform-origin: bottom;
+  animation: boy-head-anim 4s infinite linear alternate;
+}
+
+@keyframes boy-head-anim {
+  0% {
+    transform: rotate(0deg);
+  }
+  20%,
+  60% {
+    transform: rotate(-10deg);
+  }
+  80% {
+    transform: rotate(0deg);
+  }
+}
+
+.girl-head-wrap img,
+.boy-head-wrap img {
   height: 100%;
 }
 
@@ -579,6 +630,8 @@ section {
 
 .work-img-wrap {
   width: 100%;
+  /* width: 36vw;
+  height: 20vw; */
   overflow: hidden;
   transition: all 0.3s;
 }
