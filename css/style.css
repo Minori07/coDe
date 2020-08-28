@@ -25,6 +25,7 @@
 body {
   color: var(--black);
   font-family: "ヒラギノ角ゴシック", "Hiragino Sans", sans-serif;
+  letter-spacing: 0.1em;
 }
 
 ul {
@@ -43,13 +44,16 @@ a {
 
 /* header */
 header {
-  width: 12vw;
+  background-color: white;
+  width: 18vw;
   height: 100vh;
   position: fixed;
   top: 0;
-  left: 8vw;
+  left: 0;
   z-index: 99;
   padding-top: 80px;
+  padding-left: 5vw;
+  border-right: solid 1px var(--gray);
 }
 
 .header-logo-wrap {
@@ -64,12 +68,12 @@ header {
 .header-nav-list li {
   font-family: "Avenir Next", sans-serif;
   margin-bottom: 40px;
-  font-size: 14px;
-  letter-spacing: 0.07em;
+  font-size: 18px;
+  /* letter-spacing: 0.07em; */
   font-weight: 600;
 }
 
-.header-nav-list a:hover .char {
+.header-nav-list a:hover .char:first-child {
   animation-name: jump;
   animation-delay: calc(var(--char-index) * 0.075s);
   animation-duration: 3s;
@@ -81,7 +85,7 @@ header {
   font-family: "ヒラギノ角ゴシック", "Hiragino Sans", sans-serif;
   font-size: 11px;
   color: #878787;
-  font-weight: 300;
+  font-weight: 500;
 }
 .go-taku-top img {
   width: 5px;
@@ -99,7 +103,7 @@ header {
 .main-visual h1 {
   position: absolute;
   top: 30vh;
-  left: 300px;
+  left: 24vw;
   font-size: 38px;
   font-weight: 600;
   z-index: 10;
@@ -320,13 +324,13 @@ header {
   display: flex;
   align-items: center;
   transform: rotate(90deg);
-  font-size: 10px;
-  letter-spacing: 0.05em;
+  font-size: 13px;
+  /* letter-spacing: 0.05em; */
   font-family: "Avenir Next", sans-serif;
 }
 
 .scroll-lines {
-  width: 50px;
+  width: 70px;
   margin-left: 10px;
   position: relative;
 }
@@ -384,7 +388,7 @@ section {
   text-shadow: 0.5px -0.5px white, 1px -1px white, 1.5px -1.5px white,
     2px -2px white, 2.5px -2.5px white, 3px -3px white, 3.5px -3.5px white,
     4px -4px white, 4.5px -4.5px white, 2px -2px 10px var(--green);
-  letter-spacing: 0.1em;
+  /* letter-spacing: 0.1em; */
   font-weight: 600;
   font-size: 60px;
   margin-bottom: 30px;
@@ -393,8 +397,8 @@ section {
 .section-caption {
   width: 90%;
   font-size: 14px;
-  letter-spacing: 0.05em;
-  line-height: 38px;
+  /* letter-spacing: 0.1em; */
+  line-height: 1.7;
   margin-bottom: 70px;
 }
 
@@ -402,15 +406,16 @@ section {
   font-family: "Avenir Next", sans-serif;
   font-size: 40px;
   line-height: 40px;
-  font-weight: 500;
-  letter-spacing: 0.07em;
+  font-weight: 600;
+  /* letter-spacing: 0.07em; */
 }
 
 .sum p {
   font-family: "Avenir Next", sans-serif;
   font-size: 10px;
-  letter-spacing: 0.15em;
+  /* letter-spacing: 0.15em; */
   margin-bottom: 40px;
+  font-weight: 600;
 }
 
 /*what*/
@@ -503,7 +508,7 @@ section {
 .work-title {
   display: flex;
   align-items: baseline;
-  margin: 7px 0;
+  margin-top: 5px;
 }
 
 .work-title h4 {
@@ -519,7 +524,7 @@ section {
 
 .work-name {
   color: #878787;
-  font-size: 13px;
+  font-size: 11px;
 }
 
 /* member */
@@ -551,7 +556,7 @@ section {
 }
 
 .member-name {
-  font-size: 12px;
+  font-size: 11px;
 }
 
 /* comments */
@@ -614,7 +619,7 @@ footer {
 /*works.html*/
 
 .works-contents {
-  margin: 100px 10vw 0 22vw;
+  margin: 100px 5vw 0 20vw;
   padding-top: 50px;
 }
 
@@ -647,7 +652,7 @@ footer {
 }
 
 .bx-wrapper {
-  width: 46vw;
+  width: 45vw;
   height: 25.5vw;
 }
 
@@ -662,7 +667,7 @@ footer {
 
 .caption {
   height: 25.5vw;
-  width: 30%;
+  width: 28vw;
   display: flex;
   flex-wrap: wrap;
   align-content: space-between;
@@ -675,7 +680,13 @@ footer {
 }
 
 .caption p {
-  font-size: 10px;
+  font-size: 12px;
+  letter-spacing: 0.1em;
+  line-height: 1.7;
+}
+
+.overview {
+  height: 7vw;
 }
 
 .creator {
@@ -697,13 +708,16 @@ footer {
   font-size: 11px;
   width: 100%;
   background-color: var(--gray);
-  padding: 1.5vw;
+  padding: 0.8vw 1.5vw;
   border-radius: 10px;
+}
+
+.work-toc tr {
 }
 
 .toc-green {
   color: var(--green);
-  width: 80px;
+  width: 70px;
 }
 
 .go-work {
@@ -738,12 +752,12 @@ footer {
 #cover {
   width: 100vw;
   height: 100vh;
-  background-color: white;
+  background-color: var(--green);
   position: fixed;
   top: 0;
   left: 0;
   z-index: 999;
-  transition: all 0.8s;
+  transition: all 2s;
 }
 
 .jump-url {
@@ -817,7 +831,7 @@ footer {
     transform: translateY(2%) scaleY(0.9);
   }
   3% {
-    transform: translateY(-50%) scaleY(1.2);
+    transform: translateY(-30%) scaleY(1.2);
   }
   6% {
     transform: translateY(10%) scaleY(0.8);
