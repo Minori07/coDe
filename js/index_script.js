@@ -1,4 +1,3 @@
-Splitting();
 $(function () {
   setTimeout(fukiIn1, 500);
   setTimeout(fukiIn2, 800);
@@ -42,13 +41,25 @@ $(".go_taku").click(function () {
   setTimeout(linkUrl, 1000);
 });
 
+Splitting();
+
 //位置取得
 var what = document.getElementById("what").getBoundingClientRect().top;
 var podcast = document.getElementById("podcast").getBoundingClientRect().top;
 var works = document.getElementById("works").getBoundingClientRect().top;
 var member = document.getElementById("member").getBoundingClientRect().top;
 var comments = document.getElementById("comments").getBoundingClientRect().top;
+
 $(window).scroll(function () {
+  $(".fadein").each(function () {
+    var elemPos = $(this).offset().top,
+      scroll = $(window).scrollTop(),
+      windowHeight = $(window).height();
+    if (scroll > elemPos - windowHeight + 100) {
+      $(this).addClass("scrollin");
+    }
+  });
+
   $("body").each(function () {
     var elemPos = $(this).offset().top,
       scroll = $(window).scrollTop(),
@@ -65,18 +76,28 @@ $(window).scroll(function () {
             $(this).css({ transform: "scale(1)" }).dequeue();
           });
       });
+    } else {
+      $(".what h2 .char").removeClass("sec-hd-anim");
     }
     if (scroll >= podcast - 400) {
       $(".podcast h2 .char").addClass("sec-hd-anim");
+    } else {
+      $(".podcast h2 .char").removeClass("sec-hd-anim");
     }
-    if (scroll >= works - 400) {
+    if (scroll >= works - 300) {
       $(".works h2 .char").addClass("sec-hd-anim");
+    } else {
+      $(".works h2 .char").removeClass("sec-hd-anim");
     }
-    if (scroll >= member - 400) {
+    if (scroll >= member - 200) {
       $(".member h2 .char").addClass("sec-hd-anim");
+    } else {
+      $(".member h2 .char").removeClass("sec-hd-anim");
     }
-    if (scroll >= comments - 400) {
+    if (scroll >= comments - 200) {
       $(".comments h2 .char").addClass("sec-hd-anim");
+    } else {
+      $(".comments h2 .char").removeClass("sec-hd-anim");
     }
   });
 });
