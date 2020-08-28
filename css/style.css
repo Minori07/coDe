@@ -99,6 +99,7 @@ header {
   position: relative;
   width: 100vw;
   height: 100vh;
+  overflow: hidden;
 }
 
 .main-visual h1 {
@@ -115,6 +116,79 @@ header {
   height: 80%;
   position: absolute;
   bottom: 0;
+  left: 0;
+  animation: first-nami 2s;
+}
+
+.main-visual-img-wrap img {
+  width: 100vw;
+  height: 100%;
+  object-fit: cover;
+}
+
+@keyframes first-nami {
+  0%,
+  50% {
+    left: 100vw;
+  }
+  100% {
+    left: 0;
+  }
+}
+.main-hito-wrap {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  height: 70%;
+  animation: hito-fadein 3s;
+}
+
+.main-hito-wrap img {
+  height: 100%;
+}
+
+@keyframes hito-fadein {
+  0%,
+  80% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.phone-wrap {
+  position: absolute;
+  top: 56.5%;
+  left: 20%;
+  height: 5%;
+  animation: phone-vibe 0.6s infinite linear alternate;
+}
+
+@keyframes phone-vibe {
+  0% {
+    transform: translate(0, 0) rotate(-4deg);
+  }
+  10%,
+  30% {
+    transform: translate(0, -1px) rotate(0deg);
+  }
+  20%,
+  40% {
+    transform: translate(0, 0) rotate(4deg);
+  }
+  60% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+  100% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+}
+
+.phone-wrap img {
+  height: 100%;
 }
 
 /*fukidashi*/
@@ -163,7 +237,7 @@ header {
   background-color: white;
   border-radius: 100%;
   animation: maru1-animation 8s infinite;
-  animation-delay: 1.5s;
+  animation-delay: 3.5s;
 }
 .maru2 {
   position: absolute;
@@ -174,7 +248,7 @@ header {
   background-color: white;
   border-radius: 100%;
   animation: maru2-animation 8s infinite;
-  animation-delay: 1.5s;
+  animation-delay: 3.5s;
 }
 .maru3 {
   position: absolute;
@@ -185,7 +259,7 @@ header {
   background-color: white;
   border-radius: 100%;
   animation: maru3-animation 8s infinite;
-  animation-delay: 1.5s;
+  animation-delay: 3.5s;
 }
 
 @keyframes maru1-animation {
@@ -310,13 +384,7 @@ header {
   }
 }
 
-/*visual*/
-
-.main-visual-img-wrap img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
+/* scroll */
 
 .main-visual-scroll {
   position: absolute;
@@ -378,7 +446,7 @@ header {
 /*section-contents*/
 
 section {
-  padding: 0 10vw 0 22vw;
+  padding: 0 5vw 0 20vw;
   margin: 150px 0 250px;
   position: relative;
 }
@@ -403,15 +471,23 @@ section {
   margin-bottom: 70px;
 }
 
+.sum {
+  width: 54px;
+}
+
 .sum h3 {
   font-family: "Avenir Next", sans-serif;
   font-size: 40px;
   line-height: 40px;
   font-weight: 600;
+  width: 100%;
+  text-align: center;
   /* letter-spacing: 0.07em; */
 }
 
 .sum p {
+  width: 100%;
+  text-align: center;
   font-family: "Avenir Next", sans-serif;
   font-size: 10px;
   /* letter-spacing: 0.15em; */
@@ -480,6 +556,9 @@ section {
 }
 
 /*works*/
+.works {
+  margin-bottom: 0;
+}
 
 .work-list {
   display: flex;
@@ -499,11 +578,16 @@ section {
 }
 
 .work-img-wrap {
-  width: 100%;
+  width: 36vw;
+  height: 20vw;
+  overflow: hidden;
+  transition: all 0.3s;
 }
 
 .work-img-wrap img {
-  width: 100%;
+  width: 36vw;
+  height: 20vw;
+  transition: all 0.3s;
 }
 
 .work-title {
@@ -529,6 +613,9 @@ section {
 }
 
 /* member */
+.member {
+  margin-top: 0;
+}
 
 .member-row {
   display: flex;
@@ -645,10 +732,10 @@ footer {
 .summary-list li {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 80px;
+  margin-bottom: 140px;
 }
 
-.summary-list li:nth-child(2n) {
+.summary-list li:nth-child(4n) {
   flex-flow: row-reverse;
 }
 
@@ -667,8 +754,8 @@ footer {
 }
 
 .caption {
-  height: 25.5vw;
-  width: 28vw;
+  height: calc(25.5vw + 30px);
+  width: 29vw;
   display: flex;
   flex-wrap: wrap;
   align-content: space-between;
@@ -681,14 +768,15 @@ footer {
 }
 
 .caption p {
-  font-size: 12px;
+  font-size: 13px;
   letter-spacing: 0.1em;
   line-height: 1.7;
 }
 
+/* 
 .overview {
   height: 7vw;
-}
+} */
 
 .creator {
   display: flex;
@@ -714,6 +802,7 @@ footer {
 }
 
 .work-toc tr {
+  vertical-align: top;
 }
 
 .toc-green {
@@ -758,7 +847,7 @@ footer {
   top: 0;
   left: 0;
   z-index: 999;
-  transition: all 2s;
+  transition: all 1.5s;
 }
 
 .jump-url {

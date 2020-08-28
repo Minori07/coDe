@@ -1,3 +1,5 @@
+Splitting();
+
 $(function () {
   $(".header-sp-icon-wrap").click(function () {
     if ($(".header-sp-icon-wrap").hasClass("is-open")) {

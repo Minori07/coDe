@@ -1,7 +1,7 @@
 $(function () {
-  setTimeout(fukiIn1, 500);
-  setTimeout(fukiIn2, 800);
-  setTimeout(fukiAnim, 1500);
+  setTimeout(fukiIn1, 2500);
+  setTimeout(fukiIn2, 2800);
+  setTimeout(fukiAnim, 3500);
 
   $("#cover").css({ width: 0 });
 });
@@ -40,8 +40,6 @@ $(".go_taku").click(function () {
   $("#cover").css({ width: "100vw" });
   setTimeout(linkUrl, 1000);
 });
-
-Splitting();
 
 //位置取得
 var what = document.getElementById("what").getBoundingClientRect().top;

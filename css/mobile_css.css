@@ -405,8 +405,11 @@ footer {
   margin-right: 20px;
 }
 .summary-list p {
-  font-size: 11px;
   margin-top: 20px;
+}
+
+.overview {
+  height: auto;
 }
 
 .creator p {
