@@ -18,10 +18,10 @@ function fukiAnim() {
   $(".fuki-wrap").addClass("fuki-anim");
 }
 
-if (screen.width < 480) {
-  document.getElementById("main-img").innerHTML =
-    '<img src="images/main-visual-mobile.png" alt="メインビジュアル" />';
-}
+// if (screen.width < 480) {
+//   document.getElementById("main-img").innerHTML =
+//     '<img src="images/main-back-mobile.svg" alt="メインビジュアル" />';
+// }
 
 var url = "";
 function linkUrl() {

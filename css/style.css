@@ -578,15 +578,13 @@ section {
 }
 
 .work-img-wrap {
-  width: 36vw;
-  height: 20vw;
+  width: 100%;
   overflow: hidden;
   transition: all 0.3s;
 }
 
 .work-img-wrap img {
-  width: 36vw;
-  height: 20vw;
+  width: 100%;
   transition: all 0.3s;
 }
 
