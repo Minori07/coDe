@@ -283,11 +283,16 @@ section {
   flex-wrap: wrap;
   justify-content: space-between;
 }
-
 .member-list li {
   width: 45%;
   margin-right: 0;
   margin-bottom: 40px;
+}
+
+.member-img-wrap {
+  width: 100%;
+  height: auto;
+  border: none;
 }
 
 /* comment */
