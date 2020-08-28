@@ -304,11 +304,10 @@ section {
 }
 
 .member-img-wrap {
+  border: none 2px var(--green);
   width: 100%;
   height: auto;
-  border: none;
 }
-
 /* comment */
 .comments {
   padding-top: 40px;

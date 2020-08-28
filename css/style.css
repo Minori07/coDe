@@ -211,7 +211,7 @@ header {
   }
   45%,
   70% {
-    transform: rotate(-60deg) translate(0, 22%);
+    transform: rotate(-60deg) translate(0, 35%);
   }
   90%,
   100% {
