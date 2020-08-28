@@ -20,7 +20,7 @@ function fukiAnim() {
 
 if (screen.width < 480) {
   document.getElementById("main-img").innerHTML =
-    '<img src="images/main-visual-mobile.jpg" alt="メインビジュアル" />';
+    '<img src="images/main-visual-mobile.png" alt="メインビジュアル" />';
 }
 
 var url = "";
