@@ -22,6 +22,10 @@
   --gray: #f7f7f7;
 }
 
+.only-mobile {
+  display: none;
+}
+
 body {
   color: var(--black);
   font-family: "ヒラギノ角ゴシック", "Hiragino Sans", sans-serif;
@@ -524,7 +528,7 @@ header {
 /*section-contents*/
 
 section {
-  padding: 0 5vw 0 20vw;
+  padding: 0 10vw 0 20vw;
   margin: 150px 0 250px;
   position: relative;
 }
@@ -532,12 +536,12 @@ section {
 .section-heading {
   font-family: "Avenir Next", sans-serif;
   color: var(--green);
-  text-shadow: 0.5px -0.5px white, 1px -1px white, 1.5px -1.5px white,
+  /* text-shadow: 0.5px -0.5px white, 1px -1px white, 1.5px -1.5px white,
     2px -2px white, 2.5px -2.5px white, 3px -3px white, 3.5px -3.5px white,
-    4px -4px white, 4.5px -4.5px white, 2px -2px 10px var(--green);
+    4px -4px white, 4.5px -4.5px white, 2px -2px 10px var(--green); */
   /* letter-spacing: 0.1em; */
   font-weight: 600;
-  font-size: 60px;
+  font-size: 14px;
   margin-bottom: 30px;
 }
 
@@ -550,7 +554,15 @@ section {
 }
 
 .sum {
-  width: 54px;
+  width: 65px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.sum .section-heading {
+  margin-bottom: 10px;
 }
 
 .sum h3 {
@@ -559,13 +571,11 @@ section {
   line-height: 40px;
   font-weight: 600;
   width: 100%;
-  text-align: center;
   /* letter-spacing: 0.07em; */
 }
 
 .sum p {
   width: 100%;
-  text-align: center;
   font-family: "Avenir Next", sans-serif;
   font-size: 10px;
   /* letter-spacing: 0.15em; */
@@ -574,12 +584,22 @@ section {
 }
 
 /*what*/
+.what {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+}
+
+.what-left {
+  width: 60%;
+}
 
 .what-fukidashi-wrap {
   position: relative;
-  margin-left: 10vw;
-  height: 80px;
-  width: 98px;
+  top: -20px;
+  left: 3vw;
+  width: 20vw;
+  height: 16vw;
 }
 
 .what-fukidashi-wrap img {
@@ -608,6 +628,12 @@ section {
   left: 30%;
 }
 
+.sub-fuki-logo {
+  top: 17%;
+  left: 20%;
+  width: 68%;
+}
+
 .what-green {
   color: var(--green);
   font-size: 18px;
@@ -629,44 +655,60 @@ section {
 }
 
 .podcast iframe {
-  width: 90%;
+  width: 600px;
   height: auto;
 }
 
 /*works*/
-.works {
-  margin-bottom: 0;
+
+.work-list .sum {
+  width: 22vw;
+  height: 22vw;
 }
 
 .work-list {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
+  align-items: flex-start;
 }
 
-.work-list-half {
-  width: 48%;
-}
-
-.list-right {
-  position: relative;
-  top: -100px;
-}
 .work-list li {
-  margin-bottom: 60px;
+  position: relative;
+  width: 22vw;
+  margin-bottom: 2vw;
+  overflow: hidden;
 }
 
 .work-img-wrap {
-  width: 100%;
-  /* width: 36vw;
-  height: 20vw; */
-  overflow: hidden;
-  transition: all 0.3s;
+  width: 22vw;
+  height: 22vw;
 }
 
 .work-img-wrap img {
   width: 100%;
-  transition: all 0.3s;
+  height: 100%;
 }
+
+.work-hover {
+  position: absolute;
+  top: 0;
+  left: -100%;
+  margin: 15%;
+  width: 70%;
+  height: 70%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition-timing-function: ease-out;
+  transition: all 0.5s;
+}
+/* .work-list li:hover .work-hover {
+  left: 0;
+  top: 0;
+} */
 
 .work-title {
   display: flex;
@@ -675,14 +717,16 @@ section {
 }
 
 .work-title h4 {
-  font-size: 20px;
+  font-size: 18px;
   margin-right: 7px;
   font-weight: 600;
+  text-align: center;
 }
 
 .work-title p {
   margin-left: 13px;
   font-size: 10px;
+  display: none;
 }
 
 .work-name {

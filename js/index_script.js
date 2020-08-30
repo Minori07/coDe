@@ -4,6 +4,13 @@ $(function () {
   setTimeout(fukiAnim, 3500);
 
   $("#cover").css({ width: 0 });
+  $(".work-list li").each(function () {
+    //     var work = this.getBoundingClientRect();
+    //     console.log(work.top);
+    //     console.log("高い" + work.height);
+    // $(this).children(".work-hover").css({ top: 0 });
+    // $(this).children(".work-hover").css({ left: 0 });
+  });
 });
 
 function fukiIn1() {
@@ -17,11 +24,6 @@ function fukiAnim() {
   $(".main-fuki2").removeClass("fuki-anim1");
   $(".fuki-wrap").addClass("fuki-anim");
 }
-
-// if (screen.width < 480) {
-//   document.getElementById("main-img").innerHTML =
-//     '<img src="images/main-back-mobile.svg" alt="メインビジュアル" />';
-// }
 
 var url = "";
 function linkUrl() {
@@ -98,4 +100,32 @@ $(window).scroll(function () {
       $(".comments h2 .char").removeClass("sec-hd-anim");
     }
   });
+  var sc_top = $(this).scrollTop();
+
+  window.onmousemove = handleMouseMove;
+  function handleMouseMove(event) {
+    event = event || window.event; // IE対応
+    $(".work-list li").each(function () {
+      var work = this.getBoundingClientRect();
+      //   console.log(event.clientX + ", " + event.clientY);
+      //   console.log(work.left + "," + work.top);
+      var pos_x = event.clientX - work.left;
+      var pos_y = event.clientY - work.top;
+      if (pos_y > work.height) {
+        $(this).children(".work-hover").css({ top: "100%" });
+      } else if (0 < pos_y && pos_y < work.height) {
+        $(this).children(".work-hover").css({ top: 0 });
+      } else {
+        $(this).children(".work-hover").css({ top: "-100%" });
+      }
+      if (pos_x > work.width) {
+        $(this).children(".work-hover").css({ left: "100%" });
+      } else if (0 < pos_x && pos_x < work.width) {
+        $(this).children(".work-hover").css({ left: 0 });
+      } else {
+        $(this).children(".work-hover").css({ left: "-100%" });
+      }
+      // ボタンをcategory_btnをhoverしたらparent_ulが現れる。ここまでは通常営業ですね
+    });
+  }
 });

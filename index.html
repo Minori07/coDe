@@ -9,6 +9,12 @@
     <title>co:De</title>
     <!-- ページ情報 -->
     <meta name="description" content="co:De卓作品展示サイト" />
+    <link rel="icon" type="image/x-icon" href="./images/favicon.ico" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./images/apple-touch-icon-180x180-precomposed.png"
+    />
     <!-- 検索で引っかかるようにする -->
     <meta
       name="keywords"
@@ -119,7 +125,7 @@
           <div class="maru3"></div>
         </div>
       </div>
-      <div class="main-visual-img-wrap" id="main-img">
+      <div class="main-visual-img-wrap">
         <!-- <img src="images/main-visual.svg" alt="メインビジュアル" /> -->
         <img src="images/main-back.svg" alt="メインビジュアル波" />
       </div>
@@ -149,7 +155,7 @@
 
     <a name="jump-what"></a>
     <section class="what" id="what">
-      <h2 class="section-heading" data-splitting>what's co:De</h2>
+      <h2 class="section-heading only-mobile" data-splitting>what's co:De</h2>
       <div class="what-fukidashi-wrap">
         <img
           src="images/sub-fuki.svg"
@@ -171,12 +177,16 @@
           alt="吹き出しのイメージ"
           class="sub-fuki4"
         />
+        <img src="images/sub-logo.svg" alt="" class="sub-fuki-logo" />
       </div>
-      <p class="section-caption fadein">
-        co:Deは 「 <span class="what-green">楽しくコードを書く</span> 」
-        をコンセプトとし、WebサイトやWebアプリを制作する卓です。
-        企画、デザイン、コーディングのweb制作に置ける一連の流れを学びながら、作品の完成を目指します。
-      </p>
+      <div class="what-left">
+        <h2 class="section-heading only-pc" data-splitting>what's co:De</h2>
+        <p class="section-caption fadein">
+          co:Deは 「 <span class="what-green">楽しくコードを書く</span> 」
+          をコンセプトとし、WebサイトやWebアプリを制作する卓です。
+          企画、デザイン、コーディングのweb制作に置ける一連の流れを学びながら、作品の完成を目指します。
+        </p>
+      </div>
     </section>
 
     <a name="jump-podcast"></a>
@@ -201,244 +211,274 @@
 
     <a name="jump-works"></a>
     <section class="works" id="works">
-      <h2 class="section-heading" data-splitting>works</h2>
-      <div class="sum">
-        <h3>17</h3>
-        <p>contents</p>
-      </div>
       <ul class="work-list">
-        <div class="work-list-half">
-          <a class="go_work" target="work_1">
-            <li class="fadein">
-              <div class="work-img-wrap">
-                <img src="images/work-syachipa.svg" alt="作品の写真" />
-              </div>
+        <li class="sum">
+          <h2 class="section-heading" data-splitting>works</h2>
+          <h3>17</h3>
+          <p>contents</p>
+        </li>
+        <a class="go_work" target="work_1">
+          <li class="fadein">
+            <div class="work-img-wrap">
+              <img src="images/work-photo/chika.jpg" alt="作品の写真" />
+            </div>
+            <div class="work-hover">
               <div class="work-title">
-                <h4>タイトル</h4>
+                <h4>Portfolio</h4>
                 <p>/</p>
                 <p>webサイト</p>
               </div>
               <p class="work-name">4N はまちゃん</p>
-            </li>
-          </a>
-          <a class="go_work" target="work_2">
-            <li class="fadein">
-              <div class="work-img-wrap">
-                <img src="images/work-photo/chikakiyo1.jpg" alt="作品の写真" />
-              </div>
+            </div>
+          </li>
+        </a>
+        <a class="go_work" target="work_2">
+          <li class="fadein">
+            <div class="work-img-wrap">
+              <img src="images/work-photo/chika.jpg" alt="作品の写真" />
+            </div>
+            <div class="work-hover">
               <div class="work-title">
-                <h4>ポートフォリオサイト</h4>
+                <h4>kaedechikakiyo portfolio</h4>
                 <p>/</p>
                 <p>webサイト</p>
               </div>
               <p class="work-name">4N よねちゃん</p>
-            </li>
-          </a>
-          <a class="go_work" target="work_3">
-            <li class="fadein">
-              <div class="work-img-wrap">
-                <img src="images/work-photo/chikakiyo1.jpg" alt="作品の写真" />
-              </div>
+            </div>
+          </li>
+        </a>
+        <a class="go_work" target="work_3">
+          <li class="fadein">
+            <div class="work-img-wrap">
+              <img src="images/work-photo/chika.jpg" alt="作品の写真" />
+            </div>
+            <div class="work-hover">
               <div class="work-title">
                 <h4>ポートフォリオサイト</h4>
                 <p>/</p>
                 <p>webサイト</p>
               </div>
               <p class="work-name">3M いとしのエリー</p>
-            </li>
-          </a>
-          <a class="go_work" target="work_4">
-            <li class="fadein">
-              <div class="work-img-wrap">
-                <img src="images/work-syachipa.svg" alt="作品の写真" />
-              </div>
-              <div class="work-title">
-                <h4>Balloon Mail</h4>
-                <p>/</p>
-                <p>webアプリ</p>
-              </div>
-              <p class="work-name">3M 不協卍和音</p>
-            </li>
-          </a>
-          <a class="go_work" target="work_5">
-            <li class="fadein">
-              <div class="work-img-wrap">
-                <img src="images/work-photo/touhi1.jpg" alt="作品の写真" />
-              </div>
-              <div class="work-title">
-                <h4>ポートフォリオサイト</h4>
-                <p>/</p>
-                <p>webサイト</p>
-              </div>
-              <p class="work-name">3M 頭皮にやさしく</p>
-            </li>
-          </a>
-          <a class="go_work" target="work_6">
-            <li class="fadein">
-              <div class="work-img-wrap">
-                <img src="images/work-syachipa.svg" alt="作品の写真" />
-              </div>
-              <div class="work-title">
-                <h4>ポートフォリオサイト</h4>
-                <p>/</p>
-                <p>webサイト</p>
-              </div>
-              <p class="work-name">2M しゃちほこ・パッチム</p>
-            </li>
-          </a>
-          <a class="go_work" target="work_7">
-            <li class="fadein">
-              <div class="work-img-wrap">
-                <img src="images/work-syachipa.svg" alt="作品の写真" />
-              </div>
-              <div class="work-title">
-                <h4>ポートフォリオサイト</h4>
-                <p>/</p>
-                <p>webサイト</p>
-              </div>
-              <p class="work-name">2M ニトリ</p>
-            </li>
-          </a>
-          <a class="go_work" target="work_8">
-            <li class="fadein">
-              <div class="work-img-wrap">
-                <img src="images/work-syachipa.svg" alt="作品の写真" />
-              </div>
-              <div class="work-title">
-                <h4>ポートフォリオサイト</h4>
-                <p>/</p>
-                <p>webサイト</p>
-              </div>
-              <p class="work-name">2M ラムこ</p>
-            </li>
-          </a>
-        </div>
-        <div class="work-list-half list-right">
-          <a class="go_work" target="work_9">
-            <li class="fadein">
-              <div class="work-img-wrap">
-                <img src="images/work-syachipa.svg" alt="作品の写真" />
-              </div>
-              <div class="work-title">
-                <h4>ポートフォリオサイト</h4>
-                <p>/</p>
-                <p>webサイト</p>
-              </div>
-              <p class="work-name">２M 半月板</p>
-            </li>
-          </a>
-          <a class="go_work" target="work_10">
-            <li class="fadein">
-              <div class="work-img-wrap">
-                <img src="images/work-syachipa.svg" alt="作品の写真" />
-              </div>
-              <div class="work-title">
-                <h4>ポートフォリオサイト</h4>
-                <p>/</p>
-                <p>webサイト</p>
-              </div>
-              <p class="work-name">２M ローソン</p>
-            </li>
-          </a>
-          <a class="go_work" target="work_11">
-            <li class="fadein">
-              <div class="work-img-wrap">
-                <img src="images/work-photo/peyo1.jpg" alt="作品の写真" />
-              </div>
-              <div class="work-title">
-                <h4>せんたくびより</h4>
-                <p>/</p>
-                <p>webサイト</p>
-              </div>
-              <p class="work-name">1M いそのだっぺよ</p>
-            </li>
-          </a>
-          <a class="go_work" target="work_12">
-            <li class="fadein">
-              <div class="work-img-wrap">
-                <img src="images/work-syachipa.svg" alt="作品の写真" />
-              </div>
-              <div class="work-title">
-                <h4>ポートフォリオサイト</h4>
-                <p>/</p>
-                <p>webサイト</p>
-              </div>
-              <p class="work-name">1M かなりミモザ</p>
-            </li>
-          </a>
-          <a class="go_work" target="work_13">
-            <li class="fadein">
-              <div class="work-img-wrap">
-                <img src="images/work-syachipa.svg" alt="作品の写真" />
-              </div>
-              <div class="work-title">
-                <h4>ポートフォリオサイト</h4>
-                <p>/</p>
-                <p>webサイト</p>
-              </div>
-              <p class="work-name">1M 森殺</p>
-            </li>
-          </a>
-          <a class="go_work" target="work_14">
-            <li class="fadein">
-              <div class="work-img-wrap">
-                <img src="images/work-syachipa.svg" alt="作品の写真" />
-              </div>
-              <div class="work-title">
-                <h4>ポートフォリオサイト</h4>
-                <p>/</p>
-                <p>webサイト</p>
-              </div>
-              <p class="work-name">1M ネッコアラ</p>
-            </li>
-          </a>
-          <a class="go_work" target="work_15">
-            <li class="fadein">
-              <div class="work-img-wrap">
-                <img src="images/work-photo/eden1.jpg" alt="作品の写真" />
-              </div>
-              <div class="work-title">
-                <h4>世界の遊び</h4>
-                <p>/</p>
-                <p>webサイト</p>
-              </div>
-              <p class="work-name">1M Edenの林檎</p>
-            </li>
-          </a>
-          <a class="go_work" target="work_16">
-            <li class="fadein">
-              <div class="work-img-wrap">
-                <img src="images/work-syachipa.svg" alt="作品の写真" />
-              </div>
-              <div class="work-title">
-                <h4>ポートフォリオサイト</h4>
-                <p>/</p>
-                <p>webアプリ</p>
-              </div>
-              <p class="work-name">4M かまぼこ・3M ローソン</p>
-            </li>
-          </a>
-          <a class="go_work" target="work_17">
-            <li class="fadein">
-              <div class="work-img-wrap">
-                <img src="images/work-photo/sawa1-1.jpg" alt="作品の写真" />
-              </div>
+            </div>
+          </li>
+        </a>
+        <a class="go_work" target="work_4">
+          <li class="fadein">
+            <div class="work-img-wrap">
+              <img src="images/work-photo/sawa1.jpg" alt="作品の写真" />
+            </div>
+            <div class="work-hover">
               <div class="work-title">
                 <h4>Portfolio</h4>
                 <p>/</p>
                 <p>webサイト</p>
               </div>
               <p class="work-name">3M 不協卍和音</p>
-            </li>
-          </a>
-        </div>
+            </div>
+          </li>
+        </a>
+        <a class="go_work" target="work_5">
+          <li class="fadein">
+            <div class="work-img-wrap">
+              <img src="images/work-photo/tohi.jpg" alt="作品の写真" />
+            </div>
+            <div class="work-hover">
+              <div class="work-title">
+                <h4>ポートフォリオサイト</h4>
+                <p>/</p>
+                <p>webサイト</p>
+              </div>
+              <p class="work-name">3M 頭皮にやさしく</p>
+            </div>
+          </li>
+        </a>
+        <a class="go_work" target="work_6">
+          <li class="fadein">
+            <div class="work-img-wrap">
+              <img src="images/work-photo/shachipa.jpg" alt="作品の写真" />
+            </div>
+            <div class="work-hover">
+              <div class="work-title">
+                <h4>ポートフォリオサイト</h4>
+                <p>/</p>
+                <p>webサイト</p>
+              </div>
+              <p class="work-name">2M しゃちほこ・パッチム</p>
+            </div>
+          </li>
+        </a>
+        <a class="go_work" target="work_7">
+          <li class="fadein">
+            <div class="work-img-wrap">
+              <img src="images/work-syachipa.svg" alt="作品の写真" />
+            </div>
+            <div class="work-hover">
+              <div class="work-title">
+                <h4>Poppin' color</h4>
+                <p>/</p>
+                <p>webサイト</p>
+              </div>
+              <p class="work-name">2M ニトリ</p>
+            </div>
+          </li>
+        </a>
+        <a class="go_work" target="work_8">
+          <li class="fadein">
+            <div class="work-img-wrap">
+              <img src="images/work-syachipa.svg" alt="作品の写真" />
+            </div>
+            <div class="work-hover">
+              <div class="work-title">
+                <h4>ポートフォリオサイト</h4>
+                <p>/</p>
+                <p>webサイト</p>
+              </div>
+              <p class="work-name">2M ラムこ</p>
+            </div>
+          </li>
+        </a>
+        <a class="go_work" target="work_9">
+          <li class="fadein">
+            <div class="work-img-wrap">
+              <img src="images/work-photo/han1.jpg" alt="作品の写真" />
+            </div>
+            <div class="work-hover">
+              <div class="work-title">
+                <h4>HAN's blog</h4>
+                <p>/</p>
+                <p>webサイト</p>
+              </div>
+              <p class="work-name">２M 半月板</p>
+            </div>
+          </li>
+        </a>
+        <a class="go_work" target="work_10">
+          <li class="fadein">
+            <div class="work-img-wrap">
+              <img src="images/work-photo/yamori.jpg" alt="作品の写真" />
+            </div>
+            <div class="work-hover">
+              <div class="work-title">
+                <h4>MOYA BLOG</h4>
+                <p>/</p>
+                <p>webサイト</p>
+              </div>
+              <p class="work-name">２M ローソン</p>
+            </div>
+          </li>
+        </a>
+        <a class="go_work" target="work_11">
+          <li class="fadein">
+            <div class="work-img-wrap">
+              <img src="images/work-photo/peyo.jpg" alt="作品の写真" />
+            </div>
+            <div class="work-hover">
+              <div class="work-title">
+                <h4>せんたくびより</h4>
+                <p>/</p>
+                <p>webサイト</p>
+              </div>
+              <p class="work-name">1M いそのだっぺよ</p>
+            </div>
+          </li>
+        </a>
+        <a class="go_work" target="work_12">
+          <li class="fadein">
+            <div class="work-img-wrap">
+              <img src="images/work-photo/mimoza.jpg" alt="作品の写真" />
+            </div>
+            <div class="work-hover">
+              <div class="work-title">
+                <h4>犬山映えさんぽ</h4>
+                <p>/</p>
+                <p>webサイト</p>
+              </div>
+              <p class="work-name">1M かなりミモザ</p>
+            </div>
+          </li>
+        </a>
+        <a class="go_work" target="work_13">
+          <li class="fadein">
+            <div class="work-img-wrap">
+              <img src="images/work-photo/morikoro.jpg" alt="作品の写真" />
+            </div>
+            <div class="work-hover">
+              <div class="work-title">
+                <h4>LOVE MY HAIR</h4>
+                <p>/</p>
+                <p>webサイト</p>
+              </div>
+              <p class="work-name">1M 森殺</p>
+            </div>
+          </li>
+        </a>
+        <a class="go_work" target="work_14">
+          <li class="fadein">
+            <div class="work-img-wrap">
+              <img src="images/work-photo/nekko.jpg" alt="作品の写真" />
+            </div>
+            <div class="work-hover">
+              <div class="work-title">
+                <h4>Bullet Journal</h4>
+                <p>/</p>
+                <p>webサイト</p>
+              </div>
+              <p class="work-name">1M ネッコアラ</p>
+            </div>
+          </li>
+        </a>
+        <a class="go_work" target="work_15">
+          <li class="fadein">
+            <div class="work-img-wrap">
+              <img src="images/work-photo/eden.jpg" alt="作品の写真" />
+            </div>
+            <div class="work-hover">
+              <div class="work-title">
+                <h4>世界の遊び</h4>
+                <p>/</p>
+                <p>webサイト</p>
+              </div>
+              <p class="work-name">1M Edenの林檎</p>
+            </div>
+          </li>
+        </a>
+        <a class="go_work" target="work_16">
+          <li class="fadein">
+            <div class="work-img-wrap">
+              <img src="images/work-photo/bokoyamo.jpg" alt="作品の写真" />
+            </div>
+            <div class="work-hover">
+              <div class="work-title">
+                <h4>ポートフォリオサイト</h4>
+                <p>/</p>
+                <p>webアプリ</p>
+              </div>
+              <p class="work-name">4M かまぼこ・3M ローソン</p>
+            </div>
+          </li>
+        </a>
+        <a class="go_work" target="work_17">
+          <li class="fadein">
+            <div class="work-img-wrap">
+              <img src="images/work-photo/sawa1-1.jpg" alt="作品の写真" />
+            </div>
+            <div class="work-hover">
+              <div class="work-title">
+                <h4>Balloon Mail</h4>
+                <p>/</p>
+                <p>webアプリ</p>
+              </div>
+              <p class="work-name">3M 不協卍和音</p>
+            </div>
+          </li>
+        </a>
       </ul>
     </section>
 
     <a name="jump-member"></a>
     <section class="member" id="member">
-      <h2 class="section-heading" data-splitting>member</h2>
       <div class="sum">
+        <h2 class="section-heading" data-splitting>member</h2>
         <h3>20</h3>
         <p>people</p>
       </div>
