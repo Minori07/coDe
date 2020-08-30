@@ -22,10 +22,6 @@
   --gray: #f7f7f7;
 }
 
-.only-mobile {
-  display: none;
-}
-
 body {
   color: var(--black);
   font-family: "ヒラギノ角ゴシック", "Hiragino Sans", sans-serif;
@@ -1097,4 +1093,8 @@ footer {
 .member-list li:hover .member-img-wrap {
   border-style: dashed;
   padding: 3%;
+}
+
+.only-mobile {
+  display: none;
 }

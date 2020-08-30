@@ -15,10 +15,6 @@
   --black: #141414;
   --gray: #f7f7f7;
 }
-
-.only-pc {
-  display: none;
-}
 .only-mobile {
   display: block;
 }
@@ -433,6 +429,11 @@ footer {
   margin: 20px 0;
 }
 
+.slider {
+  width: auto;
+  height: 170px;
+}
+
 .caption {
   display: block;
   height: auto;
@@ -471,6 +472,7 @@ footer {
 }
 
 .go-work {
+  display: flex;
   width: 210px;
   height: 50px;
 }
@@ -478,4 +480,8 @@ footer {
 .summary-list .list-last {
   margin-bottom: 0;
   border-bottom: none;
+}
+
+.only-pc {
+  display: none;
 }
