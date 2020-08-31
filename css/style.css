@@ -61,6 +61,11 @@ header {
   padding-top: 80px;
   padding-left: 5vw;
   border-right: solid 1px var(--gray);
+  cursor: auto;
+}
+
+header a {
+  cursor: auto;
 }
 
 .header-logo-wrap {
@@ -546,6 +551,7 @@ section {
   font-weight: 600;
   font-size: 27px;
   margin-bottom: 30px;
+  z-index: 5;
 }
 
 .section-caption {
@@ -668,7 +674,6 @@ section {
 .work-list .sum {
   width: 22vw;
   height: 22vw;
-  z-index: 5;
 }
 
 .work-list {
