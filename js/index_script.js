@@ -66,7 +66,7 @@ $(window).scroll(function () {
       windowHeight = $(window).height();
     // console.log(scroll);
     if (scroll >= what - 400) {
-      const delayTime = 200;
+      const delayTime = 300;
       //   $(".what h2 .char").addClass("sec-hd-anim");
       $(".what-fukidashi-wrap img").each(function (i) {
         $(this)

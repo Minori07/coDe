@@ -666,7 +666,7 @@ section {
 
 .podcast iframe {
   width: 600px;
-  height: auto;
+  height: 100px;
 }
 
 /*works*/
@@ -1141,7 +1141,7 @@ footer {
   top: 18vh;
   left: 23vw;
   width: 15%;
-  z-index: 5;
+  z-index: 4;
 }
 
 .hidden-logo-wrap img {

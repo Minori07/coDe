@@ -18,6 +18,9 @@
 .only-mobile {
   display: block;
 }
+#cursor {
+  display: none;
+}
 
 /*header*/
 header {
