@@ -198,7 +198,7 @@ section {
 }
 
 .section-heading {
-  font-size: 14px;
+  font-size: 20px;
   margin-bottom: 10px;
   /* font-size: 28px;
     text-shadow: 0.5px -0.5px white, 1px -1px white, 1.5px -1.5px white,
@@ -217,7 +217,7 @@ section {
 }
 
 .sum p {
-  font-size: 10px;
+  font-size: 13px;
   letter-spacing: 0.15em;
   margin-bottom: 40px;
 }

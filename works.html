@@ -10,6 +10,10 @@
       content="co:De,卓,卓展,卓展2020,webサイト,webアプリケーション,学生作品"
     />
     <link rel="stylesheet" href="css/jquery.bxslider.css" />
+    <!-- <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css"
+    /> -->
     <link rel="stylesheet" href="./css/style.css" />
     <link
       rel="stylesheet"
@@ -24,6 +28,7 @@
     <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
   </head>
   <body>
+    <div id="cursor"></div>
     <div id="cover"></div>
     <header>
       <div class="header-logo-wrap">
@@ -106,10 +111,10 @@
         <a name="work_1" class="jump-url"></a>
         <li data-group="site">
           <div class="slider">
-            <img src="images/work-syachipa.svg" alt="作品のキャプチャー" />
-            <img src="images/work-syachipa.svg" alt="作品のキャプチャー" />
-            <img src="images/work-syachipa.svg" alt="作品のキャプチャー" />
-            <img src="images/work-syachipa.svg" alt="作品のキャプチャー" />
+            <img src="images/work-photo/hama1.jpg" alt="作品のキャプチャー" />
+            <img src="images/work-photo/hama2.jpg" alt="作品のキャプチャー" />
+            <img src="images/work-photo/hama3.jpg" alt="作品のキャプチャー" />
+            <!-- <img src="images/work-photo/hama4.jpg" alt="作品のキャプチャー" /> -->
           </div>
           <div class="caption">
             <h3>Portfolio</h3>
@@ -199,13 +204,13 @@
         <a name="work_3" class="jump-url"></a>
         <li data-group="site">
           <div class="slider">
-            <img src="images/work-syachipa.svg" alt="作品のキャプチャー" />
-            <img src="images/work-syachipa.svg" alt="作品のキャプチャー" />
-            <img src="images/work-syachipa.svg" alt="作品のキャプチャー" />
-            <img src="images/work-syachipa.svg" alt="作品のキャプチャー" />
+            <img
+              src="images/work-photo/no-slide.jpg"
+              alt="作品のキャプチャー"
+            />
           </div>
-          <div class="caption">
-            <h3>作品タイトル</h3>
+          <div class="caption no-slide">
+            <h3>ポートフォリオサイト</h3>
             <div class="creator">
               <div class="creator-img-wrap">
                 <img src="images/member-photo.svg" alt="制作者の写真" />
@@ -213,27 +218,23 @@
               <p>3M いとしのエリー</p>
             </div>
             <p>
-              何かコメント。 サイトの概要とかこだわり、見所等々。
-              つらつらつらつらつらつらつらつらつらつらつらつらつらつら。
-              つらつらつらつらつらつらつらつらつらつらつらつらつらつら。
-              つらつらつらつらつらつらつらつらつらつらつらつらつらつら。
-              つらつらつらつらつらつらつらつらつらつらつらつらつらつら。
+              comming soon
             </p>
             <table class="work-toc">
               <tr>
                 <td class="toc-green">target</td>
-                <td>ターゲット</td>
+                <td></td>
               </tr>
               <tr>
                 <td class="toc-green">opinion</td>
-                <td>目的</td>
+                <td></td>
               </tr>
               <tr>
                 <td class="toc-green">concept</td>
-                <td>コンセプト</td>
+                <td></td>
               </tr>
             </table>
-            <a target="blank" href="" class="go-work"
+            <a target="blank" href="" class="go-work" style="display: none;"
               >サイトを見る<img src="images/green-right.svg" alt=""
             /></a>
           </div>
@@ -271,8 +272,9 @@
               <p>3M 不協卍和音</p>
             </div>
             <p>
-              自身のポートフォリオサイトです。デザイン、コーディングを全て1人で行いました。
-              じっくり見てもらうを軸に見やすいデザイン、レイアウトを意識しました。
+              自身のポートフォリオサイトです。
+              デザイン、コーディングを全て1人で行いました。
+              見やすいデザイン、レイアウトを意識しました。
               また、自身のスキル欄でアニメーションを用いて一目見てわかりやすい工夫もしました。
             </p>
             <table class="work-toc">
@@ -326,22 +328,32 @@
               <p>3M 不協卍和音</p>
             </div>
             <p>
-              自己の思いを不特定多数に発信することができるサービスです。一般的にボトルメールとして知られているものの電子版のようなものです。
+              自己の思いを不特定多数に発信することができるサービスです。
+              一般的にボトルメールとして知られているものの電子版のようなものです。
+              周りの人など特定の誰かには言えないけど吐き出したいことがある、
+              承認欲求に疲れた、批判やレスポンスを求めない。
+              そういった人々にぜひオススメです。
             </p>
             <table class="work-toc">
               <tr>
                 <td class="toc-green">target</td>
                 <td>
-                  周りの人など特定の誰かには言えないけど吐き出したいことがある、承認欲求に疲れた、批判やレスポンスを求めない人
+                  自分の思いをただ吐き出したい人
                 </td>
               </tr>
               <tr>
                 <td class="toc-green">opinion</td>
-                <td>目的</td>
+                <td>
+                  思いを溜め込まないため<br />
+                  発散するため
+                </td>
               </tr>
               <tr>
                 <td class="toc-green">concept</td>
-                <td>コンセプト</td>
+                <td>
+                  ただ発信するだけ<br />
+                  ただ不特定の誰かの発信を見るだけ
+                </td>
               </tr>
             </table>
             <p class="only-pc">※アプリはパソコンではご覧いただけません。</p>
@@ -398,13 +410,25 @@
         <a name="work_6" class="jump-url"></a>
         <li data-group="site">
           <div class="slider">
-            <img src="images/work-syachipa.svg" alt="作品のキャプチャー" />
-            <img src="images/work-syachipa.svg" alt="作品のキャプチャー" />
-            <img src="images/work-syachipa.svg" alt="作品のキャプチャー" />
-            <img src="images/work-syachipa.svg" alt="作品のキャプチャー" />
+            <img
+              src="images/work-photo/shachipa1.jpg"
+              alt="作品のキャプチャー"
+            />
+            <img
+              src="images/work-photo/shachipa2.jpg"
+              alt="作品のキャプチャー"
+            />
+            <img
+              src="images/work-photo/shachipa3.jpg"
+              alt="作品のキャプチャー"
+            />
+            <img
+              src="images/work-photo/shachipa4.jpg"
+              alt="作品のキャプチャー"
+            />
           </div>
           <div class="caption">
-            <h3>作品タイトル</h3>
+            <h3>FoolProof</h3>
             <div class="creator">
               <div class="creator-img-wrap">
                 <img src="images/member-photo.svg" alt="制作者の写真" />
@@ -415,27 +439,32 @@
               <p>2M しゃちほこ・パッチム</p>
             </div>
             <p>
-              何かコメント。 サイトの概要とかこだわり、見所等々。
-              つらつらつらつらつらつらつらつらつらつらつらつらつらつら。
-              つらつらつらつらつらつらつらつらつらつらつらつらつらつら。
-              つらつらつらつらつらつらつらつらつらつらつらつらつらつら。
-              つらつらつらつらつらつらつらつらつらつらつらつらつらつら。
+              "foolproof"は初めて海外旅行に行く方、海外旅行に慣れていない方のためのサイトです。「どの国に行ったらどんなものがあるのか」など、行き先を決めるきっかけとなるような情報をお届けします。
+              "foolproof=絶対に確実な"という言葉通り、皆様の失敗しない海外旅行をサポートします。
             </p>
             <table class="work-toc">
               <tr>
                 <td class="toc-green">target</td>
-                <td>ターゲット</td>
+                <td>
+                  初めて海外旅行に行く人<br />
+                  海外旅行に慣れていない人
+                </td>
               </tr>
               <tr>
                 <td class="toc-green">opinion</td>
-                <td>目的</td>
+                <td>
+                  どの国に行ったらどんなものがあるのか行き先を決めるきっかけとなるような情報を提供する
+                </td>
               </tr>
               <tr>
                 <td class="toc-green">concept</td>
-                <td>コンセプト</td>
+                <td>失敗しない海外旅行</td>
               </tr>
             </table>
-            <a target="blank" href="" class="go-work"
+            <a
+              target="blank"
+              href="https://nknk-24.github.io/FoolProof/index.html"
+              class="go-work"
               >サイトを見る<img src="images/green-right.svg" alt=""
             /></a>
           </div>
@@ -443,10 +472,10 @@
         <a name="work_7" class="jump-url"></a>
         <li data-group="site">
           <div class="slider">
-            <img src="images/work-syachipa.svg" alt="作品のキャプチャー" />
-            <img src="images/work-syachipa.svg" alt="作品のキャプチャー" />
-            <img src="images/work-syachipa.svg" alt="作品のキャプチャー" />
-            <img src="images/work-syachipa.svg" alt="作品のキャプチャー" />
+            <img src="images/work-photo/nitori1.jpg" alt="作品のキャプチャー" />
+            <img src="images/work-photo/nitori2.jpg" alt="作品のキャプチャー" />
+            <img src="images/work-photo/nitori3.jpg" alt="作品のキャプチャー" />
+            <img src="images/work-photo/nitori4.jpg" alt="作品のキャプチャー" />
           </div>
           <div class="caption">
             <h3>Poppin' color</h3>
@@ -488,13 +517,13 @@
         <a name="work_8" class="jump-url"></a>
         <li data-group="site">
           <div class="slider">
-            <img src="images/work-syachipa.svg" alt="作品のキャプチャー" />
-            <img src="images/work-syachipa.svg" alt="作品のキャプチャー" />
-            <img src="images/work-syachipa.svg" alt="作品のキャプチャー" />
-            <img src="images/work-syachipa.svg" alt="作品のキャプチャー" />
+            <img src="images/work-photo/ramuko1.jpg" alt="作品のキャプチャー" />
+            <img src="images/work-photo/ramuko2.jpg" alt="作品のキャプチャー" />
+            <img src="images/work-photo/ramuko3.jpg" alt="作品のキャプチャー" />
+            <img src="images/work-photo/ramuko4.jpg" alt="作品のキャプチャー" />
           </div>
           <div class="caption">
-            <h3>作品タイトル</h3>
+            <h3>あの夏わたしはチョコミントと出会った。</h3>
             <div class="creator">
               <div class="creator-img-wrap">
                 <img src="images/member-photo.svg" alt="制作者の写真" />
@@ -502,27 +531,32 @@
               <p>2M ラムこ</p>
             </div>
             <p>
-              何かコメント。 サイトの概要とかこだわり、見所等々。
-              つらつらつらつらつらつらつらつらつらつらつらつらつらつら。
-              つらつらつらつらつらつらつらつらつらつらつらつらつらつら。
-              つらつらつらつらつらつらつらつらつらつらつらつらつらつら。
-              つらつらつらつらつらつらつらつらつらつらつらつらつらつら。
+              チョコミントが好きで夏になると色々なチョコミントアイスを
+              食べていたので今年食べたチョコミントを記録するサイトを作りました。
+              食べたものの総評や記録だけではなく女子高生の主人公を設定し、
+              自分が実際に食べた時の様子を主人公目線で日記として書くことで
+              サイト自体のストーリー性も持たせました。チョコミン党の方はもちろん
+              チョコミントを食べたことない（食わず嫌い）方にもこのサイトを通して
+              興味を持って食べてくれたらいいなあと思って作りました
             </p>
             <table class="work-toc">
               <tr>
                 <td class="toc-green">target</td>
-                <td>ターゲット</td>
+                <td>チョコミン党の方、１０ー２０代の若い女性</td>
               </tr>
               <tr>
                 <td class="toc-green">opinion</td>
-                <td>目的</td>
+                <td>チョコミントアイスの記録</td>
               </tr>
               <tr>
                 <td class="toc-green">concept</td>
-                <td>コンセプト</td>
+                <td>女子高生がチョコミントと共にひと夏を過ごす。</td>
               </tr>
             </table>
-            <a target="blank" href="" class="go-work"
+            <a
+              target="blank"
+              href="https://ramuko0712.github.io/NakamuraYoshimi.github.io/"
+              class="go-work"
               >サイトを見る<img src="images/green-right.svg" alt=""
             /></a>
           </div>
@@ -635,6 +669,61 @@
             /></a>
           </div>
         </li>
+        <a name="work_16" class="jump-url"></a>
+        <li data-group="app" class="list-last">
+          <div class="slider">
+            <img
+              src="images/work-photo/bokoyamo_1.png"
+              alt="作品のキャプチャー"
+            />
+            <img
+              src="images/work-photo/bokoyamo_2.png"
+              alt="作品のキャプチャー"
+            />
+            <img
+              src="images/work-photo/bokoyamo_3.png"
+              alt="作品のキャプチャー"
+            />
+            <img
+              src="images/work-photo/bokoyamo_4.png"
+              alt="作品のキャプチャー"
+            />
+          </div>
+          <div class="caption">
+            <h3>コマ管理アプリ</h3>
+            <div class="creator">
+              <div class="creator-img-wrap">
+                <img src="images/member-photo.svg" alt="制作者の写真" />
+              </div>
+              <div class="creator-img-wrap">
+                <img src="images/member-photo.svg" alt="制作者の写真" />
+              </div>
+              <p>4M かまぼこ・3M ローソン</p>
+            </div>
+            <p>
+              名市大軽音部のコマ予約（部室での練習日予約）を管理するWebアプリ。部内の現状の課題を整理し企画・設計から考えました。主な目的はこれまでよりもコマの予約を管理しやすくすることですが、バンドの結成、正規コマ（定期練習日）の確認も行える仕組みを実装しています。
+              展示中のアプリは開発中のデモで、来年度から部内での運用を目標としています。
+            </p>
+            <table class="work-toc">
+              <tr>
+                <td class="toc-green">target</td>
+                <td>名市大軽音部員</td>
+              </tr>
+              <tr>
+                <td class="toc-green">opinion</td>
+                <td>煩雑なコマ管理による部員へのストレスの低減</td>
+              </tr>
+              <tr>
+                <td class="toc-green">concept</td>
+                <td>コマ管理の見える化</td>
+              </tr>
+            </table>
+            <p class="only-pc">※アプリはパソコンではご覧いただけません。</p>
+            <a target="blank" href="" class="go-work only-mobile"
+              >アプリを見る<img src="images/green-right.svg" alt=""
+            /></a>
+          </div>
+        </li>
         <a name="work_11" class="jump-url"></a>
         <li data-group="site">
           <div class="slider">
@@ -666,7 +755,10 @@
               </tr>
               <tr>
                 <td class="toc-green">opinion</td>
-                <td>目的</td>
+                <td>
+                  今まで分からなかった、あやふやだった洗濯の仕方を詳しく知ってもらう。<br />
+                  お気に入りの衣服を長く楽しんでもらう。
+                </td>
               </tr>
               <tr>
                 <td class="toc-green">concept</td>
@@ -715,14 +807,14 @@
               </tr>
               <tr>
                 <td class="toc-green">concept</td>
-                <td>コンセプト</td>
+                <td>犬山をあるこう</td>
               </tr>
             </table>
             <a
               target="blank"
               href="https://iwasakimomoka.github.io/inuyamabaesanpo/"
               class="go-work"
-              >犬山をあるこう<img src="images/green-right.svg" alt=""
+              >サイトを見る<img src="images/green-right.svg" alt=""
             /></a>
           </div>
         </li>
@@ -872,61 +964,6 @@
               href=" https://yoshida010.github.io/SEKAINO-ASOBI/"
               class="go-work"
               >サイトを見る<img src="images/green-right.svg" alt=""
-            /></a>
-          </div>
-        </li>
-        <a name="work_16" class="jump-url"></a>
-        <li data-group="app" class="list-last">
-          <div class="slider">
-            <img
-              src="images/work-photo/bokoyamo_1.png"
-              alt="作品のキャプチャー"
-            />
-            <img
-              src="images/work-photo/bokoyamo_2.png"
-              alt="作品のキャプチャー"
-            />
-            <img
-              src="images/work-photo/bokoyamo_3.png"
-              alt="作品のキャプチャー"
-            />
-            <img
-              src="images/work-photo/bokoyamo_4.png"
-              alt="作品のキャプチャー"
-            />
-          </div>
-          <div class="caption">
-            <h3>作品タイトル</h3>
-            <div class="creator">
-              <div class="creator-img-wrap">
-                <img src="images/member-photo.svg" alt="制作者の写真" />
-              </div>
-              <div class="creator-img-wrap">
-                <img src="images/member-photo.svg" alt="制作者の写真" />
-              </div>
-              <p>4M かまぼこ・3M ローソン</p>
-            </div>
-            <p>
-              名市大軽音部のコマ予約（部室での練習日予約）を管理するWebアプリ。部内の現状の課題を整理し企画・設計から考えました。主な目的はこれまでよりもコマの予約を管理しやすくすることですが、バンドの結成、正規コマ（定期練習日）の確認も行える仕組みを実装しています。
-              展示中のアプリは開発中のデモで、来年度から部内での運用を目標としています。
-            </p>
-            <table class="work-toc">
-              <tr>
-                <td class="toc-green">target</td>
-                <td>名市大軽音部員</td>
-              </tr>
-              <tr>
-                <td class="toc-green">opinion</td>
-                <td>煩雑なコマ管理による部員へのストレスの低減</td>
-              </tr>
-              <tr>
-                <td class="toc-green">concept</td>
-                <td>コマ管理の見える化</td>
-              </tr>
-            </table>
-            <p class="only-pc">※アプリはパソコンではご覧いただけません。</p>
-            <a target="blank" href="" class="go-work only-mobile"
-              >アプリを見る<img src="images/green-right.svg" alt=""
             /></a>
           </div>
         </li>

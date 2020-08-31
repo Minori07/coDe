@@ -36,4 +36,70 @@ $(function () {
     );
     return false;
   });
+  var c_hov = {
+    // color: "white",
+    width: "50px",
+    height: "50px",
+  };
+  var c_none = {
+    color: "black",
+    width: "8px",
+    height: "8px",
+  };
+
+  $(".main-visual h1").hover(
+    function () {
+      // カーソルが当たった時の処理
+      $("#cursor").css({ width: "300px" });
+      $("#cursor").css({ height: "300px" });
+      $("#cursor").css({ top: "-170px" });
+      $("#cursor").css({ left: "-170px" });
+      $("#cursor").css({ "background-color": "var(--green)" });
+    },
+    function () {
+      // カーソルが離れた時の処理
+      $("#cursor").css({ width: "8px" });
+      $("#cursor").css({ height: "8px" });
+      $("#cursor").css({ top: "-4px" });
+      $("#cursor").css({ left: "-4px" });
+      $("#cursor").css({ "background-color": "var(--black)" });
+    }
+  );
+  $(".section-heading").hover(
+    function () {
+      // カーソルが当たった時の処理
+      $("#cursor").css({ width: "100px" });
+      $("#cursor").css({ height: "100px" });
+      $("#cursor").css({ top: "-70px" });
+      $("#cursor").css({ left: "-70px" });
+    },
+    function () {
+      // カーソルが離れた時の処理
+      $("#cursor").css({ width: "8px" });
+      $("#cursor").css({ height: "8px" });
+      $("#cursor").css({ top: "-4px" });
+      $("#cursor").css({ left: "-4px" });
+      $("#cursor").css({ "background-color": "var(--black)" });
+    }
+  );
+
+  let cursorR = 4; //カーソルの半径
+  const cursor = document.getElementById("cursor"); //カーソル用のdivを取得
+
+  //上記のdivタグをマウスに追従させる処理
+  document.addEventListener("mousemove", function (e) {
+    cursor.style.transform =
+      "translate(" + e.clientX + "px, " + e.clientY + "px)";
+  });
+
+  //   const linkElem = document.querySelectorAll(".member-img-wrap");
+  //   for (let i = 0; i < linkElem.length; i++) {
+  //     linkElem[i].addEventListener("mouseover", function (e) {
+  //       cursor.classList.add("hov_");
+  //       console.log("ok");
+  //     });
+  //     linkElem[i].addEventListener("mouseout", function (e) {
+  //       cursor.classList.remove("hov_");
+  //     });
+  //   }
 });

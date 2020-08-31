@@ -67,7 +67,7 @@ $(window).scroll(function () {
     // console.log(scroll);
     if (scroll >= what - 400) {
       const delayTime = 200;
-      $(".what h2 .char").addClass("sec-hd-anim");
+      //   $(".what h2 .char").addClass("sec-hd-anim");
       $(".what-fukidashi-wrap img").each(function (i) {
         $(this)
           .delay(i * delayTime)
@@ -76,28 +76,28 @@ $(window).scroll(function () {
             $(this).css({ transform: "scale(1)" }).dequeue();
           });
       });
-    } else {
-      $(".what h2 .char").removeClass("sec-hd-anim");
-    }
-    if (scroll >= podcast - 400) {
-      $(".podcast h2 .char").addClass("sec-hd-anim");
-    } else {
-      $(".podcast h2 .char").removeClass("sec-hd-anim");
-    }
-    if (scroll >= works - 300) {
-      $(".works h2 .char").addClass("sec-hd-anim");
-    } else {
-      $(".works h2 .char").removeClass("sec-hd-anim");
-    }
-    if (scroll >= member - 200) {
-      $(".member h2 .char").addClass("sec-hd-anim");
-    } else {
-      $(".member h2 .char").removeClass("sec-hd-anim");
-    }
-    if (scroll >= comments - 200) {
-      $(".comments h2 .char").addClass("sec-hd-anim");
-    } else {
-      $(".comments h2 .char").removeClass("sec-hd-anim");
+      // } else {
+      //   $(".what h2 .char").removeClass("sec-hd-anim");
+      // }
+      // if (scroll >= podcast - 400) {
+      //   $(".podcast h2 .char").addClass("sec-hd-anim");
+      // } else {
+      //   $(".podcast h2 .char").removeClass("sec-hd-anim");
+      // }
+      // if (scroll >= works - 300) {
+      //   $(".works h2 .char").addClass("sec-hd-anim");
+      // } else {
+      //   $(".works h2 .char").removeClass("sec-hd-anim");
+      // }
+      // if (scroll >= member - 200) {
+      //   $(".member h2 .char").addClass("sec-hd-anim");
+      // } else {
+      //   $(".member h2 .char").removeClass("sec-hd-anim");
+      // }
+      // if (scroll >= comments - 200) {
+      //   $(".comments h2 .char").addClass("sec-hd-anim");
+      // } else {
+      //   $(".comments h2 .char").removeClass("sec-hd-anim");
     }
   });
   var sc_top = $(this).scrollTop();
