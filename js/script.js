@@ -36,16 +36,6 @@ $(function () {
     );
     return false;
   });
-  var c_hov = {
-    // color: "white",
-    width: "50px",
-    height: "50px",
-  };
-  var c_none = {
-    color: "black",
-    width: "8px",
-    height: "8px",
-  };
 
   $(".main-visual h1").hover(
     function () {
@@ -82,6 +72,25 @@ $(function () {
       $("#cursor").css({ "background-color": "var(--black)" });
     }
   );
+
+  //   window.onmousemove = handleMouseMove;
+  //   function handleMouseMove(event) {
+  //     event = event || window.event; // IE対応
+  //     $(".member-img-cover").each(function () {
+  //       var cover = this.getBoundingClientRect();
+  //       var pos_x = event.clientX - cover.left;
+  //       var pos_y = event.clientY - cover.top;
+  //       if (
+  //         (0 < pos_y && pos_y < cover.height) ||
+  //         (0 < pos_x && pos_x < cover.width)
+  //       ) {
+  //         console.log("!");
+  //         $(this).css({
+  //           "clip-path": "circle(100px at " + pos_x + " " + pos_y + " )",
+  //         });
+  //       }
+  //     });
+  //   }
 
   let cursorR = 4; //カーソルの半径
   const cursor = document.getElementById("cursor"); //カーソル用のdivを取得

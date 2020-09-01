@@ -100,7 +100,6 @@ $(window).scroll(function () {
       //   $(".comments h2 .char").removeClass("sec-hd-anim");
     }
   });
-  var sc_top = $(this).scrollTop();
 
   window.onmousemove = handleMouseMove;
   function handleMouseMove(event) {
@@ -126,6 +125,18 @@ $(window).scroll(function () {
         $(this).children(".work-hover").css({ left: "-100%" });
       }
       // ボタンをcategory_btnをhoverしたらparent_ulが現れる。ここまでは通常営業ですね
+    });
+    $(".member-img-cover").each(function () {
+      var cover = this.getBoundingClientRect();
+      var pos_x = event.clientX - cover.left;
+      var pos_y = event.clientY - cover.top;
+      if (
+        (-40 < pos_y && pos_y < cover.height + 40) ||
+        (-40 < pos_x && pos_x < cover.width + 40)
+      ) {
+        style = "circle(50px at " + pos_x + "px " + pos_y + "px)";
+        $(this).css({ "clip-path": style });
+      }
     });
   }
 });
